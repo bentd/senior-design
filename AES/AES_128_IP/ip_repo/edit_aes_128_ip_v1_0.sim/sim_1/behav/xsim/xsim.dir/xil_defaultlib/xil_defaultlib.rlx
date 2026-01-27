@@ -1,0 +1,10 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/bentd/Documents/EEL4920/AES_128_IP/ip_repo/aes_128_ip_1.0/hdl/aes_128_ip_v1_0.v,1745458236,verilog,,,,aes_128_ip_v1_0,,,,,,,,
+C:/Users/bentd/Documents/EEL4920/AES_128_IP/ip_repo/aes_128_ip_1.0/hdl/aes_128_ip_v1_0_S00_AXI.v,1745458873,verilog,,C:/Users/bentd/Documents/EEL4920/AES_128_IP/ip_repo/aes_128_ip_1.0/src/round.v,,aes_128_ip_v1_0_S00_AXI,,,,,,,,
+C:/Users/bentd/Documents/EEL4920/AES_128_IP/ip_repo/aes_128_ip_1.0/src/aes_128.v,1745354719,verilog,,C:/Users/bentd/Documents/EEL4920/AES_128_IP/ip_repo/aes_128_ip_1.0/hdl/aes_128_ip_v1_0_S00_AXI.v,,aes_128;expand_key_128,,,,,,,,
+C:/Users/bentd/Documents/EEL4920/AES_128_IP/ip_repo/aes_128_ip_1.0/src/round.v,1745354719,verilog,,C:/Users/bentd/Documents/EEL4920/AES_128_IP/ip_repo/aes_128_ip_1.0/src/table.v,,final_round;one_round,,,,,,,,
+C:/Users/bentd/Documents/EEL4920/AES_128_IP/ip_repo/aes_128_ip_1.0/src/table.v,1745354719,verilog,,C:/Users/bentd/Documents/EEL4920/AES_128_IP/ip_repo/aes_128_ip_1.0/hdl/aes_128_ip_v1_0.v,,S;S4;T;table_lookup;xS,,,,,,,,
+C:/Users/bentd/Documents/EEL4920/AES_128_IP/ip_repo/edit_aes_128_ip_v1_0.sim/sim_1/behav/xsim/glbl.v,1513215259,verilog,,,,glbl,,,,,,,,

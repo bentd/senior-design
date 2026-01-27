@@ -1,0 +1,49 @@
+rom pynq.overlays.base import BaseOverlay
+from pynq.lib.video import *
+import cv2
+import numpy as np
+
+# Load the base overlay
+base = BaseOverlay("base.bit")
+
+# Configure HDMI output resolution
+hdmi_out = base.video.hdmi_out
+hdmi_out.configure(VideoMode(640, 480, 24))  # 640x480, 24-bit RGB
+hdmi_out.start()
+
+# Open webcam
+cap = cv2.VideoCapture(0)
+
+
+# Check camera open
+if not cap.isOpened():
+    print("Webcam not detected.")
+else:
+    print("Webcam streaming to HDMI...")
+
+try:
+    while True:
+        ret, frame_rgb = cap.read()
+        if not ret:
+            print("Frame not received.")
+            continue
+
+               
+        frame_resized = frame_resized.astype(np.uint8)  # Force correct dtype
+
+
+        # Resize (optional, matches HDMI resolution)
+        frame_resized = cv2.resize(frame_rgb, (640, 480))
+
+        # Display on HDMI
+        hdmi_buf = hdmi_out.newframe()
+        np.copyto(hdmi_buf, frame_resized)
+        hdmi_out.writeframe(hdmi_buf)
+
+except KeyboardInterrupt:
+    print("Streaming stopped by user.")
+
+# Clean up
+cap.release()
+hdmi_out.stop()
+print("HDMI and webcam shut down cleanly.")

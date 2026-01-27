@@ -1,0 +1,50 @@
+from pynq import Overlay
+from pynq.lib import AxiGPIO
+import time
+import threading
+
+# Load the bitstream
+ol = Overlay("/home/xilinx/jupyter_notebooks/design_1_wrapper.bit")
+
+# Access GPIO IPs
+glitch_gpio = AxiGPIO(ol.ip_dict['gpio_glitch_in'])
+ov_gpio = AxiGPIO(ol.ip_dict['gpio_ov_in'])
+rest_gpio = AxiGPIO(ol.ip_dict['gpio_rest_out'])
+
+# Get channels
+glitch_in = glitch_gpio.channel1
+ov_in = ov_gpio.channel1
+rest_out = rest_gpio.channel1
+
+# Configure reset output pin
+rest_out.setdirection('out')
+
+# Flag to control the thread
+monitoring = True
+
+# Function to run in the background
+def voltage_monitor():
+    global monitoring
+    while monitoring:
+        glitch_status = glitch_in.read()
+        ov_status = ov_in.read()
+
+        if glitch_status == 0:
+            print("UnderVoltage detected!")
+            rest_out.write(1, 0x1)
+            time.sleep(2)
+
+        elif ov_status == 0:
+            print("Overvoltage condition detected!")
+            rest_out.write(1, 0x1)
+            time.sleep(2)
+
+        else:
+            print("System normal")
+            rest_out.write(0, 0x1)
+
+        time.sleep(1)
+
+# Start background monitoring thread
+monitor_thread = threading.Thread(target=voltage_monitor, daemon=True)
+monitor_thread.start()

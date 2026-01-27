@@ -1,0 +1,1099 @@
+
+*** Running vivado
+    with args -log aes_128_overlay_aes_128_ip_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source aes_128_overlay_aes_128_ip_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source aes_128_overlay_aes_128_ip_0_0.tcl -notrace
+Command: synth_design -top aes_128_overlay_aes_128_ip_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3608 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 405.059 ; gain = 100.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'aes_128_overlay_aes_128_ip_0_0' [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ip/aes_128_overlay_aes_128_ip_0_0/synth/aes_128_overlay_aes_128_ip_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'aes_128_ip_v1_0' [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/hdl/aes_128_ip_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'aes_128_ip_v1_0_S00_AXI' [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/hdl/aes_128_ip_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/hdl/aes_128_ip_v1_0_S00_AXI.v:255]
+INFO: [Synth 8-226] default block is never used [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/hdl/aes_128_ip_v1_0_S00_AXI.v:492]
+INFO: [Synth 8-638] synthesizing module 'aes_128' [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/aes_128.v:17]
+INFO: [Synth 8-638] synthesizing module 'expand_key_128' [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/aes_128.v:59]
+INFO: [Synth 8-638] synthesizing module 'S4' [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:32]
+INFO: [Synth 8-638] synthesizing module 'S' [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:59]
+INFO: [Synth 8-256] done synthesizing module 'S' (1#1) [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:59]
+INFO: [Synth 8-256] done synthesizing module 'S4' (2#1) [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:32]
+INFO: [Synth 8-256] done synthesizing module 'expand_key_128' (3#1) [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/aes_128.v:59]
+INFO: [Synth 8-638] synthesizing module 'one_round' [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/round.v:18]
+INFO: [Synth 8-638] synthesizing module 'table_lookup' [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:17]
+INFO: [Synth 8-638] synthesizing module 'T' [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:45]
+INFO: [Synth 8-638] synthesizing module 'xS' [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:326]
+INFO: [Synth 8-256] done synthesizing module 'xS' (4#1) [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:326]
+INFO: [Synth 8-256] done synthesizing module 'T' (5#1) [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:45]
+INFO: [Synth 8-256] done synthesizing module 'table_lookup' (6#1) [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:17]
+INFO: [Synth 8-256] done synthesizing module 'one_round' (7#1) [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/round.v:18]
+INFO: [Synth 8-638] synthesizing module 'final_round' [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/round.v:50]
+INFO: [Synth 8-256] done synthesizing module 'final_round' (8#1) [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/round.v:50]
+INFO: [Synth 8-256] done synthesizing module 'aes_128' (9#1) [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/aes_128.v:17]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/hdl/aes_128_ip_v1_0_S00_AXI.v:243]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg9_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/hdl/aes_128_ip_v1_0_S00_AXI.v:244]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg10_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/hdl/aes_128_ip_v1_0_S00_AXI.v:245]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg11_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/hdl/aes_128_ip_v1_0_S00_AXI.v:246]
+INFO: [Synth 8-256] done synthesizing module 'aes_128_ip_v1_0_S00_AXI' (10#1) [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/hdl/aes_128_ip_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'aes_128_ip_v1_0' (11#1) [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/hdl/aes_128_ip_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'aes_128_overlay_aes_128_ip_0_0' (12#1) [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ip/aes_128_overlay_aes_128_ip_0_0/synth/aes_128_overlay_aes_128_ip_0_0.v:57]
+WARNING: [Synth 8-3331] design aes_128_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design aes_128_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design aes_128_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design aes_128_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design aes_128_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design aes_128_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 457.824 ; gain = 153.332
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 457.824 ; gain = 153.332
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.204 . Memory (MB): peak = 835.672 ; gain = 4.391
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 835.672 ; gain = 531.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 835.672 ; gain = 531.180
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 835.672 ; gain = 531.180
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 835.672 ; gain = 531.180
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 74    
+	   5 Input     32 Bit         XORs := 36    
+	   2 Input      8 Bit         XORs := 154   
++---Registers : 
+	              128 Bit    Registers := 22    
+	               32 Bit    Registers := 53    
+	                8 Bit    Registers := 344   
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---ROMs : 
+	                              ROMs := 344   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	  16 Input     32 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module S 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module expand_key_128 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 7     
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+Module xS 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module T 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module one_round 
+Detailed RTL Component Info : 
++---XORs : 
+	   5 Input     32 Bit         XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 1     
+Module final_round 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 1     
+Module aes_128 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 2     
+Module aes_128_ip_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 13    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	  16 Input     32 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t0/t0/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t0/t0/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t0/t1/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t0/t1/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t0/t2/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t0/t2/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t0/t3/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t0/t3/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t1/t0/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t1/t0/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t1/t1/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t1/t1/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t1/t2/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t1/t2/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t1/t3/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t1/t3/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t2/t0/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t2/t0/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t2/t1/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t2/t1/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t2/t2/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t2/t2/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t2/t3/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t2/t3/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t3/t0/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t3/t0/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t3/t1/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t3/t1/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t3/t2/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t3/t2/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t3/t3/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t3/t3/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t0/t0/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t0/t0/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t0/t1/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t0/t1/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t0/t2/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t0/t2/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t0/t3/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t0/t3/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t1/t0/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t1/t0/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t1/t1/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t1/t1/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t1/t2/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t1/t2/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t1/t3/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t1/t3/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t2/t0/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t2/t0/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t2/t1/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t2/t1/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+WARNING: [Synth 8-6014] Unused sequential element t2/t2/s0/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:66]
+WARNING: [Synth 8-6014] Unused sequential element t2/t2/s4/out_reg was removed.  [c:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.srcs/sources_1/bd/aes_128_overlay/ipshared/dfcd/src/table.v:333]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design aes_128_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design aes_128_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design aes_128_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design aes_128_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design aes_128_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design aes_128_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3886] merging instance 'inst/aes_128_ip_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/aes_128_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/aes_128_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/aes_128_ip_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/aes_128_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/aes_128_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/aes_128_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module aes_128_overlay_aes_128_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/aes_128_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module aes_128_overlay_aes_128_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/aes_128_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module aes_128_overlay_aes_128_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/aes_128_ip_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module aes_128_overlay_aes_128_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/aes_128_ip_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module aes_128_overlay_aes_128_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/aes_128_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module aes_128_overlay_aes_128_ip_0_0.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[127]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[126]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[125]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[124]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[123]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[122]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[121]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[120]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[119]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[118]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[117]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[116]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[115]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[114]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[113]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[112]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[111]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[110]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[109]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[108]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[107]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[106]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[105]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[104]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[103]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[102]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[101]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[100]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[99]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[98]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[97]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[96]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[95]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[94]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[93]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[92]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[91]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[90]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[89]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[88]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[87]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[86]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[85]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[84]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[83]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[82]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[81]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[80]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[79]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[78]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[77]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[76]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[75]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[74]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[73]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[72]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[71]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[70]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[69]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[68]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[67]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[66]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[65]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[64]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[63]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[62]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[61]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[60]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[59]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[58]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[57]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[56]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[55]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[54]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[53]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[52]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[51]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[50]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[49]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[48]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[47]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[46]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[45]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[44]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[43]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[42]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[41]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[40]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[39]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[38]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[37]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[36]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[35]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[34]) is unused and will be removed from module expand_key_128.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 835.672 ; gain = 531.180
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5835] Resources of type BRAM have been overutilized. Used = 344, Available = 280. Will try to implement using LUT-RAM. 
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+------------------+---------------+----------------+
+|Module Name    | RTL Object       | Depth x Width | Implemented As | 
++---------------+------------------+---------------+----------------+
+|S              | out_reg          | 256x8         | Block RAM      | 
+|xS             | out_reg          | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s4/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_3/out_reg | 256x8         | Block RAM      | 
++---------------+------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 905.711 ; gain = 601.219
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 921.117 ; gain = 616.625
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a1/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a1/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a1/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a1/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a2/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a2/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a2/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a2/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a3/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a3/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a3/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a3/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a4/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a4/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a4/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a4/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a5/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a5/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a5/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a5/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a6/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a6/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a6/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a6/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a7/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a7/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a7/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a7/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a8/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a8/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a8/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a8/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a9/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a9/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a9/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a9/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a10/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a10/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a10/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/a10/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t0/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t0/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t0/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t0/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t1/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t1/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t1/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t1/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t2/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t2/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t2/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t2/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t3/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t3/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t3/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t3/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t3/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r1/t3/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t0/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t0/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t0/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t0/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t1/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t1/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t1/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t1/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t2/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t2/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t2/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t2/t2/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t3/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_ip_v1_0_S00_AXI_inst/aes_i/r2/t3/t0/s4/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:51 ; elapsed = 00:00:53 . Memory (MB): peak = 944.387 ; gain = 639.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 944.387 ; gain = 639.895
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 944.387 ; gain = 639.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 944.387 ; gain = 639.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 944.387 ; gain = 639.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 944.387 ; gain = 639.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 944.387 ; gain = 639.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |LUT1       |    17|
+|2     |LUT2       |  1601|
+|3     |LUT3       |   449|
+|4     |LUT4       |   324|
+|5     |LUT6       |  1330|
+|6     |MUXF7      |    64|
+|7     |MUXF8      |    32|
+|8     |RAMB18E1   |   100|
+|9     |RAMB18E1_1 |    72|
+|10    |FDRE       |  4397|
+|11    |FDSE       |     1|
++------+-----------+------+
+
+Report Instance Areas: 
++------+---------------------------------+------------------------+------+
+|      |Instance                         |Module                  |Cells |
++------+---------------------------------+------------------------+------+
+|1     |top                              |                        |  8387|
+|2     |  inst                           |aes_128_ip_v1_0         |  8387|
+|3     |    aes_128_ip_v1_0_S00_AXI_inst |aes_128_ip_v1_0_S00_AXI |  8383|
+|4     |      aes_i                      |aes_128                 |  7676|
+|5     |        a1                       |expand_key_128          |   580|
+|6     |          S4_0                   |S4_303                  |   130|
+|7     |            S_1                  |S_304                   |    65|
+|8     |            S_3                  |S_305                   |    65|
+|9     |        a10                      |expand_key_128_0        |   258|
+|10    |          S4_0                   |S4_300                  |   130|
+|11    |            S_1                  |S_301                   |    65|
+|12    |            S_3                  |S_302                   |    65|
+|13    |        a2                       |expand_key_128_1        |   483|
+|14    |          S4_0                   |S4_297                  |   130|
+|15    |            S_1                  |S_298                   |    65|
+|16    |            S_3                  |S_299                   |    65|
+|17    |        a3                       |expand_key_128_2        |   483|
+|18    |          S4_0                   |S4_294                  |   130|
+|19    |            S_1                  |S_295                   |    65|
+|20    |            S_3                  |S_296                   |    65|
+|21    |        a4                       |expand_key_128_3        |   483|
+|22    |          S4_0                   |S4_291                  |   130|
+|23    |            S_1                  |S_292                   |    65|
+|24    |            S_3                  |S_293                   |    65|
+|25    |        a5                       |expand_key_128_4        |   483|
+|26    |          S4_0                   |S4_288                  |   130|
+|27    |            S_1                  |S_289                   |    65|
+|28    |            S_3                  |S_290                   |    65|
+|29    |        a6                       |expand_key_128_5        |   483|
+|30    |          S4_0                   |S4_285                  |   130|
+|31    |            S_1                  |S_286                   |    65|
+|32    |            S_3                  |S_287                   |    65|
+|33    |        a7                       |expand_key_128_6        |   483|
+|34    |          S4_0                   |S4_282                  |   130|
+|35    |            S_1                  |S_283                   |    65|
+|36    |            S_3                  |S_284                   |    65|
+|37    |        a8                       |expand_key_128_7        |   486|
+|38    |          S4_0                   |S4_279                  |   130|
+|39    |            S_1                  |S_280                   |    65|
+|40    |            S_3                  |S_281                   |    65|
+|41    |        a9                       |expand_key_128_8        |   486|
+|42    |          S4_0                   |S4_276                  |   130|
+|43    |            S_1                  |S_277                   |    65|
+|44    |            S_3                  |S_278                   |    65|
+|45    |        r1                       |one_round               |   272|
+|46    |          t0                     |table_lookup_248        |    36|
+|47    |            t0                   |T_270                   |    18|
+|48    |              s0                 |S_274                   |     1|
+|49    |              s4                 |xS_275                  |    17|
+|50    |            t2                   |T_271                   |    18|
+|51    |              s0                 |S_272                   |     1|
+|52    |              s4                 |xS_273                  |    17|
+|53    |          t1                     |table_lookup_249        |    36|
+|54    |            t0                   |T_264                   |    18|
+|55    |              s0                 |S_268                   |     1|
+|56    |              s4                 |xS_269                  |    17|
+|57    |            t2                   |T_265                   |    18|
+|58    |              s0                 |S_266                   |     1|
+|59    |              s4                 |xS_267                  |    17|
+|60    |          t2                     |table_lookup_250        |    36|
+|61    |            t0                   |T_258                   |    18|
+|62    |              s0                 |S_262                   |     1|
+|63    |              s4                 |xS_263                  |    17|
+|64    |            t2                   |T_259                   |    18|
+|65    |              s0                 |S_260                   |     1|
+|66    |              s4                 |xS_261                  |    17|
+|67    |          t3                     |table_lookup_251        |    36|
+|68    |            t0                   |T_252                   |    18|
+|69    |              s0                 |S_256                   |     1|
+|70    |              s4                 |xS_257                  |    17|
+|71    |            t2                   |T_253                   |    18|
+|72    |              s0                 |S_254                   |     1|
+|73    |              s4                 |xS_255                  |    17|
+|74    |        r2                       |one_round_9             |   272|
+|75    |          t0                     |table_lookup_220        |    36|
+|76    |            t0                   |T_242                   |    18|
+|77    |              s0                 |S_246                   |     1|
+|78    |              s4                 |xS_247                  |    17|
+|79    |            t2                   |T_243                   |    18|
+|80    |              s0                 |S_244                   |     1|
+|81    |              s4                 |xS_245                  |    17|
+|82    |          t1                     |table_lookup_221        |    36|
+|83    |            t0                   |T_236                   |    18|
+|84    |              s0                 |S_240                   |     1|
+|85    |              s4                 |xS_241                  |    17|
+|86    |            t2                   |T_237                   |    18|
+|87    |              s0                 |S_238                   |     1|
+|88    |              s4                 |xS_239                  |    17|
+|89    |          t2                     |table_lookup_222        |    36|
+|90    |            t0                   |T_230                   |    18|
+|91    |              s0                 |S_234                   |     1|
+|92    |              s4                 |xS_235                  |    17|
+|93    |            t2                   |T_231                   |    18|
+|94    |              s0                 |S_232                   |     1|
+|95    |              s4                 |xS_233                  |    17|
+|96    |          t3                     |table_lookup_223        |    36|
+|97    |            t0                   |T_224                   |    18|
+|98    |              s0                 |S_228                   |     1|
+|99    |              s4                 |xS_229                  |    17|
+|100   |            t2                   |T_225                   |    18|
+|101   |              s0                 |S_226                   |     1|
+|102   |              s4                 |xS_227                  |    17|
+|103   |        r3                       |one_round_10            |   272|
+|104   |          t0                     |table_lookup_192        |    36|
+|105   |            t0                   |T_214                   |    18|
+|106   |              s0                 |S_218                   |     1|
+|107   |              s4                 |xS_219                  |    17|
+|108   |            t2                   |T_215                   |    18|
+|109   |              s0                 |S_216                   |     1|
+|110   |              s4                 |xS_217                  |    17|
+|111   |          t1                     |table_lookup_193        |    36|
+|112   |            t0                   |T_208                   |    18|
+|113   |              s0                 |S_212                   |     1|
+|114   |              s4                 |xS_213                  |    17|
+|115   |            t2                   |T_209                   |    18|
+|116   |              s0                 |S_210                   |     1|
+|117   |              s4                 |xS_211                  |    17|
+|118   |          t2                     |table_lookup_194        |    36|
+|119   |            t0                   |T_202                   |    18|
+|120   |              s0                 |S_206                   |     1|
+|121   |              s4                 |xS_207                  |    17|
+|122   |            t2                   |T_203                   |    18|
+|123   |              s0                 |S_204                   |     1|
+|124   |              s4                 |xS_205                  |    17|
+|125   |          t3                     |table_lookup_195        |    36|
+|126   |            t0                   |T_196                   |    18|
+|127   |              s0                 |S_200                   |     1|
+|128   |              s4                 |xS_201                  |    17|
+|129   |            t2                   |T_197                   |    18|
+|130   |              s0                 |S_198                   |     1|
+|131   |              s4                 |xS_199                  |    17|
+|132   |        r4                       |one_round_11            |   272|
+|133   |          t0                     |table_lookup_164        |    36|
+|134   |            t0                   |T_186                   |    18|
+|135   |              s0                 |S_190                   |     1|
+|136   |              s4                 |xS_191                  |    17|
+|137   |            t2                   |T_187                   |    18|
+|138   |              s0                 |S_188                   |     1|
+|139   |              s4                 |xS_189                  |    17|
+|140   |          t1                     |table_lookup_165        |    36|
+|141   |            t0                   |T_180                   |    18|
+|142   |              s0                 |S_184                   |     1|
+|143   |              s4                 |xS_185                  |    17|
+|144   |            t2                   |T_181                   |    18|
+|145   |              s0                 |S_182                   |     1|
+|146   |              s4                 |xS_183                  |    17|
+|147   |          t2                     |table_lookup_166        |    36|
+|148   |            t0                   |T_174                   |    18|
+|149   |              s0                 |S_178                   |     1|
+|150   |              s4                 |xS_179                  |    17|
+|151   |            t2                   |T_175                   |    18|
+|152   |              s0                 |S_176                   |     1|
+|153   |              s4                 |xS_177                  |    17|
+|154   |          t3                     |table_lookup_167        |    36|
+|155   |            t0                   |T_168                   |    18|
+|156   |              s0                 |S_172                   |     1|
+|157   |              s4                 |xS_173                  |    17|
+|158   |            t2                   |T_169                   |    18|
+|159   |              s0                 |S_170                   |     1|
+|160   |              s4                 |xS_171                  |    17|
+|161   |        r5                       |one_round_12            |   272|
+|162   |          t0                     |table_lookup_136        |    36|
+|163   |            t0                   |T_158                   |    18|
+|164   |              s0                 |S_162                   |     1|
+|165   |              s4                 |xS_163                  |    17|
+|166   |            t2                   |T_159                   |    18|
+|167   |              s0                 |S_160                   |     1|
+|168   |              s4                 |xS_161                  |    17|
+|169   |          t1                     |table_lookup_137        |    36|
+|170   |            t0                   |T_152                   |    18|
+|171   |              s0                 |S_156                   |     1|
+|172   |              s4                 |xS_157                  |    17|
+|173   |            t2                   |T_153                   |    18|
+|174   |              s0                 |S_154                   |     1|
+|175   |              s4                 |xS_155                  |    17|
+|176   |          t2                     |table_lookup_138        |    36|
+|177   |            t0                   |T_146                   |    18|
+|178   |              s0                 |S_150                   |     1|
+|179   |              s4                 |xS_151                  |    17|
+|180   |            t2                   |T_147                   |    18|
+|181   |              s0                 |S_148                   |     1|
+|182   |              s4                 |xS_149                  |    17|
+|183   |          t3                     |table_lookup_139        |    36|
+|184   |            t0                   |T_140                   |    18|
+|185   |              s0                 |S_144                   |     1|
+|186   |              s4                 |xS_145                  |    17|
+|187   |            t2                   |T_141                   |    18|
+|188   |              s0                 |S_142                   |     1|
+|189   |              s4                 |xS_143                  |    17|
+|190   |        r6                       |one_round_13            |   272|
+|191   |          t0                     |table_lookup_108        |    36|
+|192   |            t0                   |T_130                   |    18|
+|193   |              s0                 |S_134                   |     1|
+|194   |              s4                 |xS_135                  |    17|
+|195   |            t2                   |T_131                   |    18|
+|196   |              s0                 |S_132                   |     1|
+|197   |              s4                 |xS_133                  |    17|
+|198   |          t1                     |table_lookup_109        |    36|
+|199   |            t0                   |T_124                   |    18|
+|200   |              s0                 |S_128                   |     1|
+|201   |              s4                 |xS_129                  |    17|
+|202   |            t2                   |T_125                   |    18|
+|203   |              s0                 |S_126                   |     1|
+|204   |              s4                 |xS_127                  |    17|
+|205   |          t2                     |table_lookup_110        |    36|
+|206   |            t0                   |T_118                   |    18|
+|207   |              s0                 |S_122                   |     1|
+|208   |              s4                 |xS_123                  |    17|
+|209   |            t2                   |T_119                   |    18|
+|210   |              s0                 |S_120                   |     1|
+|211   |              s4                 |xS_121                  |    17|
+|212   |          t3                     |table_lookup_111        |    36|
+|213   |            t0                   |T_112                   |    18|
+|214   |              s0                 |S_116                   |     1|
+|215   |              s4                 |xS_117                  |    17|
+|216   |            t2                   |T_113                   |    18|
+|217   |              s0                 |S_114                   |     1|
+|218   |              s4                 |xS_115                  |    17|
+|219   |        r7                       |one_round_14            |   272|
+|220   |          t0                     |table_lookup_80         |    36|
+|221   |            t0                   |T_102                   |    18|
+|222   |              s0                 |S_106                   |     1|
+|223   |              s4                 |xS_107                  |    17|
+|224   |            t2                   |T_103                   |    18|
+|225   |              s0                 |S_104                   |     1|
+|226   |              s4                 |xS_105                  |    17|
+|227   |          t1                     |table_lookup_81         |    36|
+|228   |            t0                   |T_96                    |    18|
+|229   |              s0                 |S_100                   |     1|
+|230   |              s4                 |xS_101                  |    17|
+|231   |            t2                   |T_97                    |    18|
+|232   |              s0                 |S_98                    |     1|
+|233   |              s4                 |xS_99                   |    17|
+|234   |          t2                     |table_lookup_82         |    36|
+|235   |            t0                   |T_90                    |    18|
+|236   |              s0                 |S_94                    |     1|
+|237   |              s4                 |xS_95                   |    17|
+|238   |            t2                   |T_91                    |    18|
+|239   |              s0                 |S_92                    |     1|
+|240   |              s4                 |xS_93                   |    17|
+|241   |          t3                     |table_lookup_83         |    36|
+|242   |            t0                   |T_84                    |    18|
+|243   |              s0                 |S_88                    |     1|
+|244   |              s4                 |xS_89                   |    17|
+|245   |            t2                   |T_85                    |    18|
+|246   |              s0                 |S_86                    |     1|
+|247   |              s4                 |xS_87                   |    17|
+|248   |        r8                       |one_round_15            |   272|
+|249   |          t0                     |table_lookup_52         |    36|
+|250   |            t0                   |T_74                    |    18|
+|251   |              s0                 |S_78                    |     1|
+|252   |              s4                 |xS_79                   |    17|
+|253   |            t2                   |T_75                    |    18|
+|254   |              s0                 |S_76                    |     1|
+|255   |              s4                 |xS_77                   |    17|
+|256   |          t1                     |table_lookup_53         |    36|
+|257   |            t0                   |T_68                    |    18|
+|258   |              s0                 |S_72                    |     1|
+|259   |              s4                 |xS_73                   |    17|
+|260   |            t2                   |T_69                    |    18|
+|261   |              s0                 |S_70                    |     1|
+|262   |              s4                 |xS_71                   |    17|
+|263   |          t2                     |table_lookup_54         |    36|
+|264   |            t0                   |T_62                    |    18|
+|265   |              s0                 |S_66                    |     1|
+|266   |              s4                 |xS_67                   |    17|
+|267   |            t2                   |T_63                    |    18|
+|268   |              s0                 |S_64                    |     1|
+|269   |              s4                 |xS_65                   |    17|
+|270   |          t3                     |table_lookup_55         |    36|
+|271   |            t0                   |T_56                    |    18|
+|272   |              s0                 |S_60                    |     1|
+|273   |              s4                 |xS_61                   |    17|
+|274   |            t2                   |T_57                    |    18|
+|275   |              s0                 |S_58                    |     1|
+|276   |              s4                 |xS_59                   |    17|
+|277   |        r9                       |one_round_16            |   272|
+|278   |          t0                     |table_lookup            |    36|
+|279   |            t0                   |T_46                    |    18|
+|280   |              s0                 |S_50                    |     1|
+|281   |              s4                 |xS_51                   |    17|
+|282   |            t2                   |T_47                    |    18|
+|283   |              s0                 |S_48                    |     1|
+|284   |              s4                 |xS_49                   |    17|
+|285   |          t1                     |table_lookup_27         |    36|
+|286   |            t0                   |T_40                    |    18|
+|287   |              s0                 |S_44                    |     1|
+|288   |              s4                 |xS_45                   |    17|
+|289   |            t2                   |T_41                    |    18|
+|290   |              s0                 |S_42                    |     1|
+|291   |              s4                 |xS_43                   |    17|
+|292   |          t2                     |table_lookup_28         |    36|
+|293   |            t0                   |T_34                    |    18|
+|294   |              s0                 |S_38                    |     1|
+|295   |              s4                 |xS_39                   |    17|
+|296   |            t2                   |T_35                    |    18|
+|297   |              s0                 |S_36                    |     1|
+|298   |              s4                 |xS_37                   |    17|
+|299   |          t3                     |table_lookup_29         |    36|
+|300   |            t0                   |T                       |    18|
+|301   |              s0                 |S_32                    |     1|
+|302   |              s4                 |xS_33                   |    17|
+|303   |            t2                   |T_30                    |    18|
+|304   |              s0                 |S_31                    |     1|
+|305   |              s4                 |xS                      |    17|
+|306   |        rf                       |final_round             |   136|
+|307   |          S4_1                   |S4                      |     2|
+|308   |            S_1                  |S_25                    |     1|
+|309   |            S_3                  |S_26                    |     1|
+|310   |          S4_2                   |S4_17                   |     2|
+|311   |            S_1                  |S_23                    |     1|
+|312   |            S_3                  |S_24                    |     1|
+|313   |          S4_3                   |S4_18                   |     2|
+|314   |            S_1                  |S_21                    |     1|
+|315   |            S_3                  |S_22                    |     1|
+|316   |          S4_4                   |S4_19                   |     2|
+|317   |            S_1                  |S                       |     1|
+|318   |            S_3                  |S_20                    |     1|
++------+---------------------------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 944.387 ; gain = 639.895
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 481 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:39 ; elapsed = 00:00:47 . Memory (MB): peak = 944.387 ; gain = 262.047
+Synthesis Optimization Complete : Time (s): cpu = 00:00:54 ; elapsed = 00:00:55 . Memory (MB): peak = 944.387 ; gain = 639.895
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 268 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+150 Infos, 207 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 944.387 ; gain = 651.410
+INFO: [Common 17-1381] The checkpoint 'C:/Users/bentd/Documents/EEL4920/AES_128_Overlay/AES_128_Overlay.runs/aes_128_overlay_aes_128_ip_0_0_synth_1/aes_128_overlay_aes_128_ip_0_0.dcp' has been generated.

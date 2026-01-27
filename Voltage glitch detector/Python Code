@@ -1,0 +1,50 @@
+from pynq import Overlay
+from pynq.lib import AxiGPIO
+import time
+import os  # Used to trigger system shutdown
+
+# Load your bitstream
+ol = Overlay("/home/xilinx/jupyter_notebooks/design_1_wrapper.bit")
+
+# Access GPIO IPs
+glitch_gpio = AxiGPIO(ol.ip_dict['gpio_glitch_in'])
+ov_gpio = AxiGPIO(ol.ip_dict['gpio_ov_in'])
+rest_gpio = AxiGPIO(ol.ip_dict['gpio_rest_out'])
+
+# Get GPIO channels
+glitch_in = glitch_gpio.channel1
+ov_in = ov_gpio.channel1
+rest_out = rest_gpio.channel1
+
+# Set direction for reset output
+rest_out.setdirection('out')
+
+try:
+    while True:
+        glitch_status = glitch_in.read()
+        ov_status = ov_in.read()
+
+        if glitch_status == 0:
+            print("Undervoltage detected!")
+            rest_out.write(1, 0x1)  # Assert reset signal
+            time.sleep(2)
+            print("Initiating system shutdown...")
+            os.system("poweroff")
+            break
+
+        elif ov_status == 0:
+            print("Overvoltage condition detected!")
+            rest_out.write(1, 0x1)  # Assert reset signal
+            time.sleep(2)
+            print("Initiating system shutdown...")
+            os.system("poweroff")
+            break
+
+        else:
+            print("System normal")
+            rest_out.write(0, 0x1)  # Deassert reset
+
+        time.sleep(1)
+
+except KeyboardInterrupt:
+    print("Monitoring manually stopped by user.")
