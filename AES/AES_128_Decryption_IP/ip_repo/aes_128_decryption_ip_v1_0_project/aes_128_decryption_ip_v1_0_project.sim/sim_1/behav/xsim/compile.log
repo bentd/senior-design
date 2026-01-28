@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Senior Design/Technical Work/Vivado/AES_128_Decryption_IP/ip_repo/aes_128_decryption_ip_1.0/src/aes_128.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_128
+INFO: [VRFC 10-311] analyzing module expand_key_128
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Senior Design/Technical Work/Vivado/AES_128_Decryption_IP/ip_repo/aes_128_decryption_ip_1.0/src/round.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module one_round
+INFO: [VRFC 10-311] analyzing module final_round
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Senior Design/Technical Work/Vivado/AES_128_Decryption_IP/ip_repo/aes_128_decryption_ip_1.0/src/table.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module xtime
+INFO: [VRFC 10-311] analyzing module table_lookup
+INFO: [VRFC 10-311] analyzing module T
+INFO: [VRFC 10-311] analyzing module iS4
+INFO: [VRFC 10-311] analyzing module iS
+INFO: [VRFC 10-311] analyzing module S4
+INFO: [VRFC 10-311] analyzing module S
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Senior Design/Technical Work/Vivado/AES_128_Decryption_IP/ip_repo/aes_128_decryption_ip_v1_0_project/aes_128_decryption_ip_v1_0_project.srcs/sim_1/imports/GitHub/test_aes_128.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module test_aes_128

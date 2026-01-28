@@ -1,0 +1,1614 @@
+
+*** Running vivado
+    with args -log design_1_aes_128_decryption_ip_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_aes_128_decryption_ip_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source design_1_aes_128_decryption_ip_0_0.tcl -notrace
+Command: synth_design -top design_1_aes_128_decryption_ip_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18676 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 405.844 ; gain = 101.363
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_aes_128_decryption_ip_0_0' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ip/design_1_aes_128_decryption_ip_0_0/synth/design_1_aes_128_decryption_ip_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'aes_128_decryption_ip_v1_0' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/hdl/aes_128_decryption_ip_v1_0.v:4]
+	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S00_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'aes_128_decryption_ip_v1_0_S00_AXI' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/hdl/aes_128_decryption_ip_v1_0_S00_AXI.v:4]
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/hdl/aes_128_decryption_ip_v1_0_S00_AXI.v:255]
+INFO: [Synth 8-226] default block is never used [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/hdl/aes_128_decryption_ip_v1_0_S00_AXI.v:492]
+INFO: [Synth 8-638] synthesizing module 'aes_128' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/aes_128.v:1]
+INFO: [Synth 8-638] synthesizing module 'expand_key_128' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/aes_128.v:43]
+INFO: [Synth 8-638] synthesizing module 'S4' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:29]
+INFO: [Synth 8-638] synthesizing module 'S' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:81]
+INFO: [Synth 8-256] done synthesizing module 'S' (1#1) [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:81]
+INFO: [Synth 8-256] done synthesizing module 'S4' (2#1) [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:29]
+INFO: [Synth 8-256] done synthesizing module 'expand_key_128' (3#1) [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/aes_128.v:43]
+INFO: [Synth 8-638] synthesizing module 'one_round' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/round.v:1]
+INFO: [Synth 8-638] synthesizing module 'table_lookup' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:1]
+INFO: [Synth 8-638] synthesizing module 'T' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:47]
+INFO: [Synth 8-638] synthesizing module 'xtime' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:347]
+INFO: [Synth 8-256] done synthesizing module 'xtime' (4#1) [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:347]
+WARNING: [Synth 8-689] width (8) of port connection 'y' does not match port width (9) of module 'xtime' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:59]
+WARNING: [Synth 8-689] width (8) of port connection 'y' does not match port width (9) of module 'xtime' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:60]
+WARNING: [Synth 8-689] width (8) of port connection 'y' does not match port width (9) of module 'xtime' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:61]
+INFO: [Synth 8-256] done synthesizing module 'T' (5#1) [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:47]
+INFO: [Synth 8-256] done synthesizing module 'table_lookup' (6#1) [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:1]
+INFO: [Synth 8-256] done synthesizing module 'one_round' (7#1) [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/round.v:1]
+INFO: [Synth 8-638] synthesizing module 'final_round' [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/round.v:37]
+INFO: [Synth 8-256] done synthesizing module 'final_round' (8#1) [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/round.v:37]
+INFO: [Synth 8-256] done synthesizing module 'aes_128' (9#1) [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/aes_128.v:1]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/hdl/aes_128_decryption_ip_v1_0_S00_AXI.v:243]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg9_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/hdl/aes_128_decryption_ip_v1_0_S00_AXI.v:244]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg10_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/hdl/aes_128_decryption_ip_v1_0_S00_AXI.v:245]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg11_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/hdl/aes_128_decryption_ip_v1_0_S00_AXI.v:246]
+INFO: [Synth 8-256] done synthesizing module 'aes_128_decryption_ip_v1_0_S00_AXI' (10#1) [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/hdl/aes_128_decryption_ip_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'aes_128_decryption_ip_v1_0' (11#1) [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/hdl/aes_128_decryption_ip_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'design_1_aes_128_decryption_ip_0_0' (12#1) [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ip/design_1_aes_128_decryption_ip_0_0/synth/design_1_aes_128_decryption_ip_0_0.v:57]
+WARNING: [Synth 8-3331] design aes_128_decryption_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design aes_128_decryption_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design aes_128_decryption_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design aes_128_decryption_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design aes_128_decryption_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design aes_128_decryption_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 457.613 ; gain = 153.133
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 457.613 ; gain = 153.133
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.371 . Memory (MB): peak = 856.648 ; gain = 10.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 856.648 ; gain = 552.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 856.648 ; gain = 552.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 856.648 ; gain = 552.168
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 856.648 ; gain = 552.168
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
+	   2 Input     32 Bit         XORs := 74    
+	   5 Input     32 Bit         XORs := 36    
+	   2 Input      9 Bit         XORs := 432   
+	   2 Input      8 Bit         XORs := 442   
+	   3 Input      8 Bit         XORs := 144   
++---Registers : 
+	              128 Bit    Registers := 22    
+	               32 Bit    Registers := 53    
+	                9 Bit    Registers := 432   
+	                8 Bit    Registers := 200   
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---ROMs : 
+	                              ROMs := 200   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	  16 Input     32 Bit        Muxes := 12    
+	   2 Input      9 Bit        Muxes := 432   
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module S 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module expand_key_128 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 7     
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               32 Bit    Registers := 4     
+Module xtime 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      9 Bit         XORs := 1     
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      9 Bit        Muxes := 1     
+Module T 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      8 Bit         XORs := 3     
+	   3 Input      8 Bit         XORs := 1     
+Module one_round 
+Detailed RTL Component Info : 
++---XORs : 
+	   5 Input     32 Bit         XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 1     
+Module final_round 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 4     
++---Registers : 
+	              128 Bit    Registers := 1     
+Module aes_128 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input    128 Bit         XORs := 1     
++---Registers : 
+	              128 Bit    Registers := 2     
+Module aes_128_decryption_ip_v1_0_S00_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 13    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 12    
+	  16 Input     32 Bit        Muxes := 12    
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_3/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_2/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_1/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element S4_0/S_0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-3936] Found unconnected internal register 't0/t0/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't0/t0/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't0/t0/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't0/t1/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't0/t1/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't0/t1/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't0/t2/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't0/t2/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't0/t2/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't0/t3/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't0/t3/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't0/t3/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't1/t0/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't1/t0/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't1/t0/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't1/t1/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't1/t1/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't1/t1/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't1/t2/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't1/t2/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't1/t2/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't1/t3/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't1/t3/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't1/t3/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't2/t0/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't2/t0/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't2/t0/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't2/t1/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't2/t1/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't2/t1/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't2/t2/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't2/t2/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't2/t2/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't2/t3/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't2/t3/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't2/t3/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't3/t0/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't3/t0/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't3/t0/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't3/t1/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't3/t1/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't3/t1/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't3/t2/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't3/t2/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't3/t2/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't3/t3/s3/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't3/t3/s2/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-3936] Found unconnected internal register 't3/t3/s1/y_reg' and it is trimmed from '9' to '8' bits. [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:353]
+WARNING: [Synth 8-6014] Unused sequential element t0/t0/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t1/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t2/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t3/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t0/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t1/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t2/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t3/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t2/t0/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t2/t1/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t2/t2/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t2/t3/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t3/t0/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t3/t1/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t3/t2/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t3/t3/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t0/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t1/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t2/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t3/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t0/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t1/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t2/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t3/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t2/t0/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t2/t1/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t2/t2/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t2/t3/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t3/t0/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t3/t1/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t3/t2/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t3/t3/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t0/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t1/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t2/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t3/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t0/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t1/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t2/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t3/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t2/t0/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t2/t1/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t2/t2/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t2/t3/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t3/t0/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t3/t1/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t3/t2/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t3/t3/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t0/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t1/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t2/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t0/t3/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t0/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t1/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+WARNING: [Synth 8-6014] Unused sequential element t1/t2/s0/out_reg was removed.  [d:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.srcs/sources_1/bd/design_1/ipshared/8353/src/table.v:88]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design aes_128_decryption_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design aes_128_decryption_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design aes_128_decryption_ip_v1_0_S00_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design aes_128_decryption_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design aes_128_decryption_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design aes_128_decryption_ip_v1_0_S00_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3886] merging instance 'inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module design_1_aes_128_decryption_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module design_1_aes_128_decryption_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module design_1_aes_128_decryption_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module design_1_aes_128_decryption_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module design_1_aes_128_decryption_ip_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module design_1_aes_128_decryption_ip_0_0.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[127]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[126]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[125]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[124]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[123]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[122]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[121]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[120]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[119]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[118]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[117]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[116]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[115]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[114]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[113]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[112]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[111]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[110]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[109]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[108]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[107]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[106]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[105]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[104]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[103]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[102]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[101]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[100]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[99]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[98]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[97]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[96]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[95]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[94]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[93]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[92]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[91]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[90]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[89]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[88]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[87]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[86]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[85]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[84]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[83]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[82]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[81]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[80]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[79]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[78]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[77]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[76]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[75]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[74]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[73]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[72]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[71]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[70]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[69]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[68]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[67]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[66]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[65]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[64]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[63]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[62]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[61]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[60]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[59]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[58]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[57]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[56]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[55]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[54]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[53]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[52]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[51]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[50]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[49]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[48]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[47]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[46]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[45]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[44]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[43]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[42]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[41]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[40]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[39]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[38]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[37]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[36]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[35]) is unused and will be removed from module expand_key_128.
+WARNING: [Synth 8-3332] Sequential element (out_1_reg[34]) is unused and will be removed from module expand_key_128.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 856.648 ; gain = 552.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++---------------+------------------+---------------+----------------+
+|Module Name    | RTL Object       | Depth x Width | Implemented As | 
++---------------+------------------+---------------+----------------+
+|S              | out_reg          | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_0/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_3/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_1/out_reg | 256x8         | Block RAM      | 
+|expand_key_128 | S4_0/S_2/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t2/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t0/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t1/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t1/t3/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t2/t0/s0/out_reg | 256x8         | Block RAM      | 
+|one_round      | t3/t0/s0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_1/S_0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_2/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_2/S_0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_3/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_3/S_0/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_1/out_reg | 256x8         | Block RAM      | 
+|final_round    | S4_4/S_0/out_reg | 256x8         | Block RAM      | 
++---------------+------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:56 . Memory (MB): peak = 909.125 ; gain = 604.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 928.797 ; gain = 624.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a1/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a1/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a1/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a1/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a2/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a2/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a2/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a2/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a3/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a3/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a3/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a3/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a4/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a4/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a4/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a4/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a5/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a5/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a5/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a5/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a6/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a6/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a6/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a6/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a7/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a7/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a7/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a7/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a8/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a8/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a8/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a8/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a9/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a9/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a9/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a9/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a10/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a10/S4_0/S_3/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a10/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/a10/S4_0/S_1/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t3/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t3/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t3/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t3/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t3/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t3/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t3/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r4/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r4/t0/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r4/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r4/t0/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r4/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r4/t1/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r4/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r4/t1/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r4/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r4/t2/t0/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r4/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/aes_128_decryption_ip_v1_0_S00_AXI_inst/aes_i/r4/t2/t2/s0/out_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Common 17-14] Message 'Synth 8-4480' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 1050.441 ; gain = 745.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 1050.441 ; gain = 745.961
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:57 ; elapsed = 00:01:02 . Memory (MB): peak = 1050.441 ; gain = 745.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1050.441 ; gain = 745.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1050.441 ; gain = 745.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1050.441 ; gain = 745.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1050.441 ; gain = 745.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |    17|
+|2     |LUT2     |  2961|
+|3     |LUT3     |   737|
+|4     |LUT4     |  1476|
+|5     |LUT5     |   288|
+|6     |LUT6     |  1330|
+|7     |MUXF7    |    64|
+|8     |MUXF8    |    32|
+|9     |RAMB18E1 |   100|
+|10    |FDRE     |  7853|
+|11    |FDSE     |     1|
++------+---------+------+
+
+Report Instance Areas: 
++------+--------------------------------------------+-----------------------------------+------+
+|      |Instance                                    |Module                             |Cells |
++------+--------------------------------------------+-----------------------------------+------+
+|1     |top                                         |                                   | 14859|
+|2     |  inst                                      |aes_128_decryption_ip_v1_0         | 14859|
+|3     |    aes_128_decryption_ip_v1_0_S00_AXI_inst |aes_128_decryption_ip_v1_0_S00_AXI | 14855|
+|4     |      aes_i                                 |aes_128                            | 14148|
+|5     |        a1                                  |expand_key_128                     |   706|
+|6     |          S4_0                              |S4_735                             |   258|
+|7     |            S_1                             |S_736                              |   129|
+|8     |            S_3                             |S_737                              |   129|
+|9     |        a10                                 |expand_key_128_0                   |   258|
+|10    |          S4_0                              |S4_732                             |   130|
+|11    |            S_1                             |S_733                              |    65|
+|12    |            S_3                             |S_734                              |    65|
+|13    |        a2                                  |expand_key_128_1                   |   546|
+|14    |          S4_0                              |S4_729                             |   194|
+|15    |            S_1                             |S_730                              |   129|
+|16    |            S_3                             |S_731                              |    65|
+|17    |        a3                                  |expand_key_128_2                   |   546|
+|18    |          S4_0                              |S4_726                             |   194|
+|19    |            S_1                             |S_727                              |   129|
+|20    |            S_3                             |S_728                              |    65|
+|21    |        a4                                  |expand_key_128_3                   |   546|
+|22    |          S4_0                              |S4_723                             |   194|
+|23    |            S_1                             |S_724                              |   129|
+|24    |            S_3                             |S_725                              |    65|
+|25    |        a5                                  |expand_key_128_4                   |   546|
+|26    |          S4_0                              |S4_720                             |   194|
+|27    |            S_1                             |S_721                              |   129|
+|28    |            S_3                             |S_722                              |    65|
+|29    |        a6                                  |expand_key_128_5                   |   546|
+|30    |          S4_0                              |S4_717                             |   194|
+|31    |            S_1                             |S_718                              |   129|
+|32    |            S_3                             |S_719                              |    65|
+|33    |        a7                                  |expand_key_128_6                   |   546|
+|34    |          S4_0                              |S4_714                             |   194|
+|35    |            S_1                             |S_715                              |   129|
+|36    |            S_3                             |S_716                              |    65|
+|37    |        a8                                  |expand_key_128_7                   |   546|
+|38    |          S4_0                              |S4_711                             |   194|
+|39    |            S_1                             |S_712                              |   129|
+|40    |            S_3                             |S_713                              |    65|
+|41    |        a9                                  |expand_key_128_8                   |   546|
+|42    |          S4_0                              |S4_708                             |   194|
+|43    |            S_1                             |S_709                              |   129|
+|44    |            S_3                             |S_710                              |    65|
+|45    |        r1                                  |one_round                          |   920|
+|46    |          t0                                |table_lookup_632                   |   198|
+|47    |            t0                              |T_690                              |    53|
+|48    |              s0                            |S_704                              |    15|
+|49    |              s1                            |xtime_705                          |    19|
+|50    |              s2                            |xtime_706                          |    11|
+|51    |              s3                            |xtime_707                          |     8|
+|52    |            t1                              |T_691                              |    38|
+|53    |              s1                            |xtime_701                          |    11|
+|54    |              s2                            |xtime_702                          |    11|
+|55    |              s3                            |xtime_703                          |    16|
+|56    |            t2                              |T_692                              |    53|
+|57    |              s0                            |S_697                              |     7|
+|58    |              s1                            |xtime_698                          |    19|
+|59    |              s2                            |xtime_699                          |    19|
+|60    |              s3                            |xtime_700                          |     8|
+|61    |            t3                              |T_693                              |    54|
+|62    |              s1                            |xtime_694                          |    19|
+|63    |              s2                            |xtime_695                          |    11|
+|64    |              s3                            |xtime_696                          |    24|
+|65    |          t1                                |table_lookup_633                   |   198|
+|66    |            t0                              |T_672                              |    53|
+|67    |              s0                            |S_686                              |    15|
+|68    |              s1                            |xtime_687                          |    19|
+|69    |              s2                            |xtime_688                          |    11|
+|70    |              s3                            |xtime_689                          |     8|
+|71    |            t1                              |T_673                              |    38|
+|72    |              s1                            |xtime_683                          |    11|
+|73    |              s2                            |xtime_684                          |    11|
+|74    |              s3                            |xtime_685                          |    16|
+|75    |            t2                              |T_674                              |    53|
+|76    |              s0                            |S_679                              |     7|
+|77    |              s1                            |xtime_680                          |    19|
+|78    |              s2                            |xtime_681                          |    19|
+|79    |              s3                            |xtime_682                          |     8|
+|80    |            t3                              |T_675                              |    54|
+|81    |              s1                            |xtime_676                          |    19|
+|82    |              s2                            |xtime_677                          |    11|
+|83    |              s3                            |xtime_678                          |    24|
+|84    |          t2                                |table_lookup_634                   |   198|
+|85    |            t0                              |T_654                              |    53|
+|86    |              s0                            |S_668                              |    15|
+|87    |              s1                            |xtime_669                          |    19|
+|88    |              s2                            |xtime_670                          |    11|
+|89    |              s3                            |xtime_671                          |     8|
+|90    |            t1                              |T_655                              |    38|
+|91    |              s1                            |xtime_665                          |    11|
+|92    |              s2                            |xtime_666                          |    11|
+|93    |              s3                            |xtime_667                          |    16|
+|94    |            t2                              |T_656                              |    53|
+|95    |              s0                            |S_661                              |     7|
+|96    |              s1                            |xtime_662                          |    19|
+|97    |              s2                            |xtime_663                          |    19|
+|98    |              s3                            |xtime_664                          |     8|
+|99    |            t3                              |T_657                              |    54|
+|100   |              s1                            |xtime_658                          |    19|
+|101   |              s2                            |xtime_659                          |    11|
+|102   |              s3                            |xtime_660                          |    24|
+|103   |          t3                                |table_lookup_635                   |   198|
+|104   |            t0                              |T_636                              |    53|
+|105   |              s0                            |S_650                              |    15|
+|106   |              s1                            |xtime_651                          |    19|
+|107   |              s2                            |xtime_652                          |    11|
+|108   |              s3                            |xtime_653                          |     8|
+|109   |            t1                              |T_637                              |    38|
+|110   |              s1                            |xtime_647                          |    11|
+|111   |              s2                            |xtime_648                          |    11|
+|112   |              s3                            |xtime_649                          |    16|
+|113   |            t2                              |T_638                              |    53|
+|114   |              s0                            |S_643                              |     7|
+|115   |              s1                            |xtime_644                          |    19|
+|116   |              s2                            |xtime_645                          |    19|
+|117   |              s3                            |xtime_646                          |     8|
+|118   |            t3                              |T_639                              |    54|
+|119   |              s1                            |xtime_640                          |    19|
+|120   |              s2                            |xtime_641                          |    11|
+|121   |              s3                            |xtime_642                          |    24|
+|122   |        r2                                  |one_round_9                        |   920|
+|123   |          t0                                |table_lookup_556                   |   198|
+|124   |            t0                              |T_614                              |    53|
+|125   |              s0                            |S_628                              |    15|
+|126   |              s1                            |xtime_629                          |    19|
+|127   |              s2                            |xtime_630                          |    11|
+|128   |              s3                            |xtime_631                          |     8|
+|129   |            t1                              |T_615                              |    38|
+|130   |              s1                            |xtime_625                          |    11|
+|131   |              s2                            |xtime_626                          |    11|
+|132   |              s3                            |xtime_627                          |    16|
+|133   |            t2                              |T_616                              |    53|
+|134   |              s0                            |S_621                              |     7|
+|135   |              s1                            |xtime_622                          |    19|
+|136   |              s2                            |xtime_623                          |    19|
+|137   |              s3                            |xtime_624                          |     8|
+|138   |            t3                              |T_617                              |    54|
+|139   |              s1                            |xtime_618                          |    19|
+|140   |              s2                            |xtime_619                          |    11|
+|141   |              s3                            |xtime_620                          |    24|
+|142   |          t1                                |table_lookup_557                   |   198|
+|143   |            t0                              |T_596                              |    53|
+|144   |              s0                            |S_610                              |    15|
+|145   |              s1                            |xtime_611                          |    19|
+|146   |              s2                            |xtime_612                          |    11|
+|147   |              s3                            |xtime_613                          |     8|
+|148   |            t1                              |T_597                              |    38|
+|149   |              s1                            |xtime_607                          |    11|
+|150   |              s2                            |xtime_608                          |    11|
+|151   |              s3                            |xtime_609                          |    16|
+|152   |            t2                              |T_598                              |    53|
+|153   |              s0                            |S_603                              |     7|
+|154   |              s1                            |xtime_604                          |    19|
+|155   |              s2                            |xtime_605                          |    19|
+|156   |              s3                            |xtime_606                          |     8|
+|157   |            t3                              |T_599                              |    54|
+|158   |              s1                            |xtime_600                          |    19|
+|159   |              s2                            |xtime_601                          |    11|
+|160   |              s3                            |xtime_602                          |    24|
+|161   |          t2                                |table_lookup_558                   |   198|
+|162   |            t0                              |T_578                              |    53|
+|163   |              s0                            |S_592                              |    15|
+|164   |              s1                            |xtime_593                          |    19|
+|165   |              s2                            |xtime_594                          |    11|
+|166   |              s3                            |xtime_595                          |     8|
+|167   |            t1                              |T_579                              |    38|
+|168   |              s1                            |xtime_589                          |    11|
+|169   |              s2                            |xtime_590                          |    11|
+|170   |              s3                            |xtime_591                          |    16|
+|171   |            t2                              |T_580                              |    53|
+|172   |              s0                            |S_585                              |     7|
+|173   |              s1                            |xtime_586                          |    19|
+|174   |              s2                            |xtime_587                          |    19|
+|175   |              s3                            |xtime_588                          |     8|
+|176   |            t3                              |T_581                              |    54|
+|177   |              s1                            |xtime_582                          |    19|
+|178   |              s2                            |xtime_583                          |    11|
+|179   |              s3                            |xtime_584                          |    24|
+|180   |          t3                                |table_lookup_559                   |   198|
+|181   |            t0                              |T_560                              |    53|
+|182   |              s0                            |S_574                              |    15|
+|183   |              s1                            |xtime_575                          |    19|
+|184   |              s2                            |xtime_576                          |    11|
+|185   |              s3                            |xtime_577                          |     8|
+|186   |            t1                              |T_561                              |    38|
+|187   |              s1                            |xtime_571                          |    11|
+|188   |              s2                            |xtime_572                          |    11|
+|189   |              s3                            |xtime_573                          |    16|
+|190   |            t2                              |T_562                              |    53|
+|191   |              s0                            |S_567                              |     7|
+|192   |              s1                            |xtime_568                          |    19|
+|193   |              s2                            |xtime_569                          |    19|
+|194   |              s3                            |xtime_570                          |     8|
+|195   |            t3                              |T_563                              |    54|
+|196   |              s1                            |xtime_564                          |    19|
+|197   |              s2                            |xtime_565                          |    11|
+|198   |              s3                            |xtime_566                          |    24|
+|199   |        r3                                  |one_round_10                       |   920|
+|200   |          t0                                |table_lookup_480                   |   198|
+|201   |            t0                              |T_538                              |    53|
+|202   |              s0                            |S_552                              |    15|
+|203   |              s1                            |xtime_553                          |    19|
+|204   |              s2                            |xtime_554                          |    11|
+|205   |              s3                            |xtime_555                          |     8|
+|206   |            t1                              |T_539                              |    38|
+|207   |              s1                            |xtime_549                          |    11|
+|208   |              s2                            |xtime_550                          |    11|
+|209   |              s3                            |xtime_551                          |    16|
+|210   |            t2                              |T_540                              |    53|
+|211   |              s0                            |S_545                              |     7|
+|212   |              s1                            |xtime_546                          |    19|
+|213   |              s2                            |xtime_547                          |    19|
+|214   |              s3                            |xtime_548                          |     8|
+|215   |            t3                              |T_541                              |    54|
+|216   |              s1                            |xtime_542                          |    19|
+|217   |              s2                            |xtime_543                          |    11|
+|218   |              s3                            |xtime_544                          |    24|
+|219   |          t1                                |table_lookup_481                   |   198|
+|220   |            t0                              |T_520                              |    53|
+|221   |              s0                            |S_534                              |    15|
+|222   |              s1                            |xtime_535                          |    19|
+|223   |              s2                            |xtime_536                          |    11|
+|224   |              s3                            |xtime_537                          |     8|
+|225   |            t1                              |T_521                              |    38|
+|226   |              s1                            |xtime_531                          |    11|
+|227   |              s2                            |xtime_532                          |    11|
+|228   |              s3                            |xtime_533                          |    16|
+|229   |            t2                              |T_522                              |    53|
+|230   |              s0                            |S_527                              |     7|
+|231   |              s1                            |xtime_528                          |    19|
+|232   |              s2                            |xtime_529                          |    19|
+|233   |              s3                            |xtime_530                          |     8|
+|234   |            t3                              |T_523                              |    54|
+|235   |              s1                            |xtime_524                          |    19|
+|236   |              s2                            |xtime_525                          |    11|
+|237   |              s3                            |xtime_526                          |    24|
+|238   |          t2                                |table_lookup_482                   |   198|
+|239   |            t0                              |T_502                              |    53|
+|240   |              s0                            |S_516                              |    15|
+|241   |              s1                            |xtime_517                          |    19|
+|242   |              s2                            |xtime_518                          |    11|
+|243   |              s3                            |xtime_519                          |     8|
+|244   |            t1                              |T_503                              |    38|
+|245   |              s1                            |xtime_513                          |    11|
+|246   |              s2                            |xtime_514                          |    11|
+|247   |              s3                            |xtime_515                          |    16|
+|248   |            t2                              |T_504                              |    53|
+|249   |              s0                            |S_509                              |     7|
+|250   |              s1                            |xtime_510                          |    19|
+|251   |              s2                            |xtime_511                          |    19|
+|252   |              s3                            |xtime_512                          |     8|
+|253   |            t3                              |T_505                              |    54|
+|254   |              s1                            |xtime_506                          |    19|
+|255   |              s2                            |xtime_507                          |    11|
+|256   |              s3                            |xtime_508                          |    24|
+|257   |          t3                                |table_lookup_483                   |   198|
+|258   |            t0                              |T_484                              |    53|
+|259   |              s0                            |S_498                              |    15|
+|260   |              s1                            |xtime_499                          |    19|
+|261   |              s2                            |xtime_500                          |    11|
+|262   |              s3                            |xtime_501                          |     8|
+|263   |            t1                              |T_485                              |    38|
+|264   |              s1                            |xtime_495                          |    11|
+|265   |              s2                            |xtime_496                          |    11|
+|266   |              s3                            |xtime_497                          |    16|
+|267   |            t2                              |T_486                              |    53|
+|268   |              s0                            |S_491                              |     7|
+|269   |              s1                            |xtime_492                          |    19|
+|270   |              s2                            |xtime_493                          |    19|
+|271   |              s3                            |xtime_494                          |     8|
+|272   |            t3                              |T_487                              |    54|
+|273   |              s1                            |xtime_488                          |    19|
+|274   |              s2                            |xtime_489                          |    11|
+|275   |              s3                            |xtime_490                          |    24|
+|276   |        r4                                  |one_round_11                       |   920|
+|277   |          t0                                |table_lookup_404                   |   198|
+|278   |            t0                              |T_462                              |    53|
+|279   |              s0                            |S_476                              |    15|
+|280   |              s1                            |xtime_477                          |    19|
+|281   |              s2                            |xtime_478                          |    11|
+|282   |              s3                            |xtime_479                          |     8|
+|283   |            t1                              |T_463                              |    38|
+|284   |              s1                            |xtime_473                          |    11|
+|285   |              s2                            |xtime_474                          |    11|
+|286   |              s3                            |xtime_475                          |    16|
+|287   |            t2                              |T_464                              |    53|
+|288   |              s0                            |S_469                              |     7|
+|289   |              s1                            |xtime_470                          |    19|
+|290   |              s2                            |xtime_471                          |    19|
+|291   |              s3                            |xtime_472                          |     8|
+|292   |            t3                              |T_465                              |    54|
+|293   |              s1                            |xtime_466                          |    19|
+|294   |              s2                            |xtime_467                          |    11|
+|295   |              s3                            |xtime_468                          |    24|
+|296   |          t1                                |table_lookup_405                   |   198|
+|297   |            t0                              |T_444                              |    53|
+|298   |              s0                            |S_458                              |    15|
+|299   |              s1                            |xtime_459                          |    19|
+|300   |              s2                            |xtime_460                          |    11|
+|301   |              s3                            |xtime_461                          |     8|
+|302   |            t1                              |T_445                              |    38|
+|303   |              s1                            |xtime_455                          |    11|
+|304   |              s2                            |xtime_456                          |    11|
+|305   |              s3                            |xtime_457                          |    16|
+|306   |            t2                              |T_446                              |    53|
+|307   |              s0                            |S_451                              |     7|
+|308   |              s1                            |xtime_452                          |    19|
+|309   |              s2                            |xtime_453                          |    19|
+|310   |              s3                            |xtime_454                          |     8|
+|311   |            t3                              |T_447                              |    54|
+|312   |              s1                            |xtime_448                          |    19|
+|313   |              s2                            |xtime_449                          |    11|
+|314   |              s3                            |xtime_450                          |    24|
+|315   |          t2                                |table_lookup_406                   |   198|
+|316   |            t0                              |T_426                              |    53|
+|317   |              s0                            |S_440                              |    15|
+|318   |              s1                            |xtime_441                          |    19|
+|319   |              s2                            |xtime_442                          |    11|
+|320   |              s3                            |xtime_443                          |     8|
+|321   |            t1                              |T_427                              |    38|
+|322   |              s1                            |xtime_437                          |    11|
+|323   |              s2                            |xtime_438                          |    11|
+|324   |              s3                            |xtime_439                          |    16|
+|325   |            t2                              |T_428                              |    53|
+|326   |              s0                            |S_433                              |     7|
+|327   |              s1                            |xtime_434                          |    19|
+|328   |              s2                            |xtime_435                          |    19|
+|329   |              s3                            |xtime_436                          |     8|
+|330   |            t3                              |T_429                              |    54|
+|331   |              s1                            |xtime_430                          |    19|
+|332   |              s2                            |xtime_431                          |    11|
+|333   |              s3                            |xtime_432                          |    24|
+|334   |          t3                                |table_lookup_407                   |   198|
+|335   |            t0                              |T_408                              |    53|
+|336   |              s0                            |S_422                              |    15|
+|337   |              s1                            |xtime_423                          |    19|
+|338   |              s2                            |xtime_424                          |    11|
+|339   |              s3                            |xtime_425                          |     8|
+|340   |            t1                              |T_409                              |    38|
+|341   |              s1                            |xtime_419                          |    11|
+|342   |              s2                            |xtime_420                          |    11|
+|343   |              s3                            |xtime_421                          |    16|
+|344   |            t2                              |T_410                              |    53|
+|345   |              s0                            |S_415                              |     7|
+|346   |              s1                            |xtime_416                          |    19|
+|347   |              s2                            |xtime_417                          |    19|
+|348   |              s3                            |xtime_418                          |     8|
+|349   |            t3                              |T_411                              |    54|
+|350   |              s1                            |xtime_412                          |    19|
+|351   |              s2                            |xtime_413                          |    11|
+|352   |              s3                            |xtime_414                          |    24|
+|353   |        r5                                  |one_round_12                       |   920|
+|354   |          t0                                |table_lookup_328                   |   198|
+|355   |            t0                              |T_386                              |    53|
+|356   |              s0                            |S_400                              |    15|
+|357   |              s1                            |xtime_401                          |    19|
+|358   |              s2                            |xtime_402                          |    11|
+|359   |              s3                            |xtime_403                          |     8|
+|360   |            t1                              |T_387                              |    38|
+|361   |              s1                            |xtime_397                          |    11|
+|362   |              s2                            |xtime_398                          |    11|
+|363   |              s3                            |xtime_399                          |    16|
+|364   |            t2                              |T_388                              |    53|
+|365   |              s0                            |S_393                              |     7|
+|366   |              s1                            |xtime_394                          |    19|
+|367   |              s2                            |xtime_395                          |    19|
+|368   |              s3                            |xtime_396                          |     8|
+|369   |            t3                              |T_389                              |    54|
+|370   |              s1                            |xtime_390                          |    19|
+|371   |              s2                            |xtime_391                          |    11|
+|372   |              s3                            |xtime_392                          |    24|
+|373   |          t1                                |table_lookup_329                   |   198|
+|374   |            t0                              |T_368                              |    53|
+|375   |              s0                            |S_382                              |    15|
+|376   |              s1                            |xtime_383                          |    19|
+|377   |              s2                            |xtime_384                          |    11|
+|378   |              s3                            |xtime_385                          |     8|
+|379   |            t1                              |T_369                              |    38|
+|380   |              s1                            |xtime_379                          |    11|
+|381   |              s2                            |xtime_380                          |    11|
+|382   |              s3                            |xtime_381                          |    16|
+|383   |            t2                              |T_370                              |    53|
+|384   |              s0                            |S_375                              |     7|
+|385   |              s1                            |xtime_376                          |    19|
+|386   |              s2                            |xtime_377                          |    19|
+|387   |              s3                            |xtime_378                          |     8|
+|388   |            t3                              |T_371                              |    54|
+|389   |              s1                            |xtime_372                          |    19|
+|390   |              s2                            |xtime_373                          |    11|
+|391   |              s3                            |xtime_374                          |    24|
+|392   |          t2                                |table_lookup_330                   |   198|
+|393   |            t0                              |T_350                              |    53|
+|394   |              s0                            |S_364                              |    15|
+|395   |              s1                            |xtime_365                          |    19|
+|396   |              s2                            |xtime_366                          |    11|
+|397   |              s3                            |xtime_367                          |     8|
+|398   |            t1                              |T_351                              |    38|
+|399   |              s1                            |xtime_361                          |    11|
+|400   |              s2                            |xtime_362                          |    11|
+|401   |              s3                            |xtime_363                          |    16|
+|402   |            t2                              |T_352                              |    53|
+|403   |              s0                            |S_357                              |     7|
+|404   |              s1                            |xtime_358                          |    19|
+|405   |              s2                            |xtime_359                          |    19|
+|406   |              s3                            |xtime_360                          |     8|
+|407   |            t3                              |T_353                              |    54|
+|408   |              s1                            |xtime_354                          |    19|
+|409   |              s2                            |xtime_355                          |    11|
+|410   |              s3                            |xtime_356                          |    24|
+|411   |          t3                                |table_lookup_331                   |   198|
+|412   |            t0                              |T_332                              |    53|
+|413   |              s0                            |S_346                              |    15|
+|414   |              s1                            |xtime_347                          |    19|
+|415   |              s2                            |xtime_348                          |    11|
+|416   |              s3                            |xtime_349                          |     8|
+|417   |            t1                              |T_333                              |    38|
+|418   |              s1                            |xtime_343                          |    11|
+|419   |              s2                            |xtime_344                          |    11|
+|420   |              s3                            |xtime_345                          |    16|
+|421   |            t2                              |T_334                              |    53|
+|422   |              s0                            |S_339                              |     7|
+|423   |              s1                            |xtime_340                          |    19|
+|424   |              s2                            |xtime_341                          |    19|
+|425   |              s3                            |xtime_342                          |     8|
+|426   |            t3                              |T_335                              |    54|
+|427   |              s1                            |xtime_336                          |    19|
+|428   |              s2                            |xtime_337                          |    11|
+|429   |              s3                            |xtime_338                          |    24|
+|430   |        r6                                  |one_round_13                       |   920|
+|431   |          t0                                |table_lookup_252                   |   198|
+|432   |            t0                              |T_310                              |    53|
+|433   |              s0                            |S_324                              |    15|
+|434   |              s1                            |xtime_325                          |    19|
+|435   |              s2                            |xtime_326                          |    11|
+|436   |              s3                            |xtime_327                          |     8|
+|437   |            t1                              |T_311                              |    38|
+|438   |              s1                            |xtime_321                          |    11|
+|439   |              s2                            |xtime_322                          |    11|
+|440   |              s3                            |xtime_323                          |    16|
+|441   |            t2                              |T_312                              |    53|
+|442   |              s0                            |S_317                              |     7|
+|443   |              s1                            |xtime_318                          |    19|
+|444   |              s2                            |xtime_319                          |    19|
+|445   |              s3                            |xtime_320                          |     8|
+|446   |            t3                              |T_313                              |    54|
+|447   |              s1                            |xtime_314                          |    19|
+|448   |              s2                            |xtime_315                          |    11|
+|449   |              s3                            |xtime_316                          |    24|
+|450   |          t1                                |table_lookup_253                   |   198|
+|451   |            t0                              |T_292                              |    53|
+|452   |              s0                            |S_306                              |    15|
+|453   |              s1                            |xtime_307                          |    19|
+|454   |              s2                            |xtime_308                          |    11|
+|455   |              s3                            |xtime_309                          |     8|
+|456   |            t1                              |T_293                              |    38|
+|457   |              s1                            |xtime_303                          |    11|
+|458   |              s2                            |xtime_304                          |    11|
+|459   |              s3                            |xtime_305                          |    16|
+|460   |            t2                              |T_294                              |    53|
+|461   |              s0                            |S_299                              |     7|
+|462   |              s1                            |xtime_300                          |    19|
+|463   |              s2                            |xtime_301                          |    19|
+|464   |              s3                            |xtime_302                          |     8|
+|465   |            t3                              |T_295                              |    54|
+|466   |              s1                            |xtime_296                          |    19|
+|467   |              s2                            |xtime_297                          |    11|
+|468   |              s3                            |xtime_298                          |    24|
+|469   |          t2                                |table_lookup_254                   |   198|
+|470   |            t0                              |T_274                              |    53|
+|471   |              s0                            |S_288                              |    15|
+|472   |              s1                            |xtime_289                          |    19|
+|473   |              s2                            |xtime_290                          |    11|
+|474   |              s3                            |xtime_291                          |     8|
+|475   |            t1                              |T_275                              |    38|
+|476   |              s1                            |xtime_285                          |    11|
+|477   |              s2                            |xtime_286                          |    11|
+|478   |              s3                            |xtime_287                          |    16|
+|479   |            t2                              |T_276                              |    53|
+|480   |              s0                            |S_281                              |     7|
+|481   |              s1                            |xtime_282                          |    19|
+|482   |              s2                            |xtime_283                          |    19|
+|483   |              s3                            |xtime_284                          |     8|
+|484   |            t3                              |T_277                              |    54|
+|485   |              s1                            |xtime_278                          |    19|
+|486   |              s2                            |xtime_279                          |    11|
+|487   |              s3                            |xtime_280                          |    24|
+|488   |          t3                                |table_lookup_255                   |   198|
+|489   |            t0                              |T_256                              |    53|
+|490   |              s0                            |S_270                              |    15|
+|491   |              s1                            |xtime_271                          |    19|
+|492   |              s2                            |xtime_272                          |    11|
+|493   |              s3                            |xtime_273                          |     8|
+|494   |            t1                              |T_257                              |    38|
+|495   |              s1                            |xtime_267                          |    11|
+|496   |              s2                            |xtime_268                          |    11|
+|497   |              s3                            |xtime_269                          |    16|
+|498   |            t2                              |T_258                              |    53|
+|499   |              s0                            |S_263                              |     7|
+|500   |              s1                            |xtime_264                          |    19|
+|501   |              s2                            |xtime_265                          |    19|
+|502   |              s3                            |xtime_266                          |     8|
+|503   |            t3                              |T_259                              |    54|
+|504   |              s1                            |xtime_260                          |    19|
+|505   |              s2                            |xtime_261                          |    11|
+|506   |              s3                            |xtime_262                          |    24|
+|507   |        r7                                  |one_round_14                       |   920|
+|508   |          t0                                |table_lookup_176                   |   198|
+|509   |            t0                              |T_234                              |    53|
+|510   |              s0                            |S_248                              |    15|
+|511   |              s1                            |xtime_249                          |    19|
+|512   |              s2                            |xtime_250                          |    11|
+|513   |              s3                            |xtime_251                          |     8|
+|514   |            t1                              |T_235                              |    38|
+|515   |              s1                            |xtime_245                          |    11|
+|516   |              s2                            |xtime_246                          |    11|
+|517   |              s3                            |xtime_247                          |    16|
+|518   |            t2                              |T_236                              |    53|
+|519   |              s0                            |S_241                              |     7|
+|520   |              s1                            |xtime_242                          |    19|
+|521   |              s2                            |xtime_243                          |    19|
+|522   |              s3                            |xtime_244                          |     8|
+|523   |            t3                              |T_237                              |    54|
+|524   |              s1                            |xtime_238                          |    19|
+|525   |              s2                            |xtime_239                          |    11|
+|526   |              s3                            |xtime_240                          |    24|
+|527   |          t1                                |table_lookup_177                   |   198|
+|528   |            t0                              |T_216                              |    53|
+|529   |              s0                            |S_230                              |    15|
+|530   |              s1                            |xtime_231                          |    19|
+|531   |              s2                            |xtime_232                          |    11|
+|532   |              s3                            |xtime_233                          |     8|
+|533   |            t1                              |T_217                              |    38|
+|534   |              s1                            |xtime_227                          |    11|
+|535   |              s2                            |xtime_228                          |    11|
+|536   |              s3                            |xtime_229                          |    16|
+|537   |            t2                              |T_218                              |    53|
+|538   |              s0                            |S_223                              |     7|
+|539   |              s1                            |xtime_224                          |    19|
+|540   |              s2                            |xtime_225                          |    19|
+|541   |              s3                            |xtime_226                          |     8|
+|542   |            t3                              |T_219                              |    54|
+|543   |              s1                            |xtime_220                          |    19|
+|544   |              s2                            |xtime_221                          |    11|
+|545   |              s3                            |xtime_222                          |    24|
+|546   |          t2                                |table_lookup_178                   |   198|
+|547   |            t0                              |T_198                              |    53|
+|548   |              s0                            |S_212                              |    15|
+|549   |              s1                            |xtime_213                          |    19|
+|550   |              s2                            |xtime_214                          |    11|
+|551   |              s3                            |xtime_215                          |     8|
+|552   |            t1                              |T_199                              |    38|
+|553   |              s1                            |xtime_209                          |    11|
+|554   |              s2                            |xtime_210                          |    11|
+|555   |              s3                            |xtime_211                          |    16|
+|556   |            t2                              |T_200                              |    53|
+|557   |              s0                            |S_205                              |     7|
+|558   |              s1                            |xtime_206                          |    19|
+|559   |              s2                            |xtime_207                          |    19|
+|560   |              s3                            |xtime_208                          |     8|
+|561   |            t3                              |T_201                              |    54|
+|562   |              s1                            |xtime_202                          |    19|
+|563   |              s2                            |xtime_203                          |    11|
+|564   |              s3                            |xtime_204                          |    24|
+|565   |          t3                                |table_lookup_179                   |   198|
+|566   |            t0                              |T_180                              |    53|
+|567   |              s0                            |S_194                              |    15|
+|568   |              s1                            |xtime_195                          |    19|
+|569   |              s2                            |xtime_196                          |    11|
+|570   |              s3                            |xtime_197                          |     8|
+|571   |            t1                              |T_181                              |    38|
+|572   |              s1                            |xtime_191                          |    11|
+|573   |              s2                            |xtime_192                          |    11|
+|574   |              s3                            |xtime_193                          |    16|
+|575   |            t2                              |T_182                              |    53|
+|576   |              s0                            |S_187                              |     7|
+|577   |              s1                            |xtime_188                          |    19|
+|578   |              s2                            |xtime_189                          |    19|
+|579   |              s3                            |xtime_190                          |     8|
+|580   |            t3                              |T_183                              |    54|
+|581   |              s1                            |xtime_184                          |    19|
+|582   |              s2                            |xtime_185                          |    11|
+|583   |              s3                            |xtime_186                          |    24|
+|584   |        r8                                  |one_round_15                       |   920|
+|585   |          t0                                |table_lookup_100                   |   198|
+|586   |            t0                              |T_158                              |    53|
+|587   |              s0                            |S_172                              |    15|
+|588   |              s1                            |xtime_173                          |    19|
+|589   |              s2                            |xtime_174                          |    11|
+|590   |              s3                            |xtime_175                          |     8|
+|591   |            t1                              |T_159                              |    38|
+|592   |              s1                            |xtime_169                          |    11|
+|593   |              s2                            |xtime_170                          |    11|
+|594   |              s3                            |xtime_171                          |    16|
+|595   |            t2                              |T_160                              |    53|
+|596   |              s0                            |S_165                              |     7|
+|597   |              s1                            |xtime_166                          |    19|
+|598   |              s2                            |xtime_167                          |    19|
+|599   |              s3                            |xtime_168                          |     8|
+|600   |            t3                              |T_161                              |    54|
+|601   |              s1                            |xtime_162                          |    19|
+|602   |              s2                            |xtime_163                          |    11|
+|603   |              s3                            |xtime_164                          |    24|
+|604   |          t1                                |table_lookup_101                   |   198|
+|605   |            t0                              |T_140                              |    53|
+|606   |              s0                            |S_154                              |    15|
+|607   |              s1                            |xtime_155                          |    19|
+|608   |              s2                            |xtime_156                          |    11|
+|609   |              s3                            |xtime_157                          |     8|
+|610   |            t1                              |T_141                              |    38|
+|611   |              s1                            |xtime_151                          |    11|
+|612   |              s2                            |xtime_152                          |    11|
+|613   |              s3                            |xtime_153                          |    16|
+|614   |            t2                              |T_142                              |    53|
+|615   |              s0                            |S_147                              |     7|
+|616   |              s1                            |xtime_148                          |    19|
+|617   |              s2                            |xtime_149                          |    19|
+|618   |              s3                            |xtime_150                          |     8|
+|619   |            t3                              |T_143                              |    54|
+|620   |              s1                            |xtime_144                          |    19|
+|621   |              s2                            |xtime_145                          |    11|
+|622   |              s3                            |xtime_146                          |    24|
+|623   |          t2                                |table_lookup_102                   |   198|
+|624   |            t0                              |T_122                              |    53|
+|625   |              s0                            |S_136                              |    15|
+|626   |              s1                            |xtime_137                          |    19|
+|627   |              s2                            |xtime_138                          |    11|
+|628   |              s3                            |xtime_139                          |     8|
+|629   |            t1                              |T_123                              |    38|
+|630   |              s1                            |xtime_133                          |    11|
+|631   |              s2                            |xtime_134                          |    11|
+|632   |              s3                            |xtime_135                          |    16|
+|633   |            t2                              |T_124                              |    53|
+|634   |              s0                            |S_129                              |     7|
+|635   |              s1                            |xtime_130                          |    19|
+|636   |              s2                            |xtime_131                          |    19|
+|637   |              s3                            |xtime_132                          |     8|
+|638   |            t3                              |T_125                              |    54|
+|639   |              s1                            |xtime_126                          |    19|
+|640   |              s2                            |xtime_127                          |    11|
+|641   |              s3                            |xtime_128                          |    24|
+|642   |          t3                                |table_lookup_103                   |   198|
+|643   |            t0                              |T_104                              |    53|
+|644   |              s0                            |S_118                              |    15|
+|645   |              s1                            |xtime_119                          |    19|
+|646   |              s2                            |xtime_120                          |    11|
+|647   |              s3                            |xtime_121                          |     8|
+|648   |            t1                              |T_105                              |    38|
+|649   |              s1                            |xtime_115                          |    11|
+|650   |              s2                            |xtime_116                          |    11|
+|651   |              s3                            |xtime_117                          |    16|
+|652   |            t2                              |T_106                              |    53|
+|653   |              s0                            |S_111                              |     7|
+|654   |              s1                            |xtime_112                          |    19|
+|655   |              s2                            |xtime_113                          |    19|
+|656   |              s3                            |xtime_114                          |     8|
+|657   |            t3                              |T_107                              |    54|
+|658   |              s1                            |xtime_108                          |    19|
+|659   |              s2                            |xtime_109                          |    11|
+|660   |              s3                            |xtime_110                          |    24|
+|661   |        r9                                  |one_round_16                       |   920|
+|662   |          t0                                |table_lookup                       |   198|
+|663   |            t0                              |T_82                               |    53|
+|664   |              s0                            |S_96                               |    15|
+|665   |              s1                            |xtime_97                           |    19|
+|666   |              s2                            |xtime_98                           |    11|
+|667   |              s3                            |xtime_99                           |     8|
+|668   |            t1                              |T_83                               |    38|
+|669   |              s1                            |xtime_93                           |    11|
+|670   |              s2                            |xtime_94                           |    11|
+|671   |              s3                            |xtime_95                           |    16|
+|672   |            t2                              |T_84                               |    53|
+|673   |              s0                            |S_89                               |     7|
+|674   |              s1                            |xtime_90                           |    19|
+|675   |              s2                            |xtime_91                           |    19|
+|676   |              s3                            |xtime_92                           |     8|
+|677   |            t3                              |T_85                               |    54|
+|678   |              s1                            |xtime_86                           |    19|
+|679   |              s2                            |xtime_87                           |    11|
+|680   |              s3                            |xtime_88                           |    24|
+|681   |          t1                                |table_lookup_27                    |   198|
+|682   |            t0                              |T_64                               |    53|
+|683   |              s0                            |S_78                               |    15|
+|684   |              s1                            |xtime_79                           |    19|
+|685   |              s2                            |xtime_80                           |    11|
+|686   |              s3                            |xtime_81                           |     8|
+|687   |            t1                              |T_65                               |    38|
+|688   |              s1                            |xtime_75                           |    11|
+|689   |              s2                            |xtime_76                           |    11|
+|690   |              s3                            |xtime_77                           |    16|
+|691   |            t2                              |T_66                               |    53|
+|692   |              s0                            |S_71                               |     7|
+|693   |              s1                            |xtime_72                           |    19|
+|694   |              s2                            |xtime_73                           |    19|
+|695   |              s3                            |xtime_74                           |     8|
+|696   |            t3                              |T_67                               |    54|
+|697   |              s1                            |xtime_68                           |    19|
+|698   |              s2                            |xtime_69                           |    11|
+|699   |              s3                            |xtime_70                           |    24|
+|700   |          t2                                |table_lookup_28                    |   198|
+|701   |            t0                              |T_46                               |    53|
+|702   |              s0                            |S_60                               |    15|
+|703   |              s1                            |xtime_61                           |    19|
+|704   |              s2                            |xtime_62                           |    11|
+|705   |              s3                            |xtime_63                           |     8|
+|706   |            t1                              |T_47                               |    38|
+|707   |              s1                            |xtime_57                           |    11|
+|708   |              s2                            |xtime_58                           |    11|
+|709   |              s3                            |xtime_59                           |    16|
+|710   |            t2                              |T_48                               |    53|
+|711   |              s0                            |S_53                               |     7|
+|712   |              s1                            |xtime_54                           |    19|
+|713   |              s2                            |xtime_55                           |    19|
+|714   |              s3                            |xtime_56                           |     8|
+|715   |            t3                              |T_49                               |    54|
+|716   |              s1                            |xtime_50                           |    19|
+|717   |              s2                            |xtime_51                           |    11|
+|718   |              s3                            |xtime_52                           |    24|
+|719   |          t3                                |table_lookup_29                    |   198|
+|720   |            t0                              |T                                  |    53|
+|721   |              s0                            |S_42                               |    15|
+|722   |              s1                            |xtime_43                           |    19|
+|723   |              s2                            |xtime_44                           |    11|
+|724   |              s3                            |xtime_45                           |     8|
+|725   |            t1                              |T_30                               |    38|
+|726   |              s1                            |xtime_39                           |    11|
+|727   |              s2                            |xtime_40                           |    11|
+|728   |              s3                            |xtime_41                           |    16|
+|729   |            t2                              |T_31                               |    53|
+|730   |              s0                            |S_35                               |     7|
+|731   |              s1                            |xtime_36                           |    19|
+|732   |              s2                            |xtime_37                           |    19|
+|733   |              s3                            |xtime_38                           |     8|
+|734   |            t3                              |T_32                               |    54|
+|735   |              s1                            |xtime                              |    19|
+|736   |              s2                            |xtime_33                           |    11|
+|737   |              s3                            |xtime_34                           |    24|
+|738   |        rf                                  |final_round                        |   136|
+|739   |          S4_1                              |S4                                 |     2|
+|740   |            S_1                             |S_25                               |     1|
+|741   |            S_3                             |S_26                               |     1|
+|742   |          S4_2                              |S4_17                              |     2|
+|743   |            S_1                             |S_23                               |     1|
+|744   |            S_3                             |S_24                               |     1|
+|745   |          S4_3                              |S4_18                              |     2|
+|746   |            S_1                             |S_21                               |     1|
+|747   |            S_3                             |S_22                               |     1|
+|748   |          S4_4                              |S4_19                              |     2|
+|749   |            S_1                             |S                                  |     1|
+|750   |            S_3                             |S_20                               |     1|
++------+--------------------------------------------+-----------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:59 ; elapsed = 00:01:04 . Memory (MB): peak = 1050.441 ; gain = 745.961
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 383 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:52 . Memory (MB): peak = 1050.441 ; gain = 346.926
+Synthesis Optimization Complete : Time (s): cpu = 00:01:00 ; elapsed = 00:01:05 . Memory (MB): peak = 1050.441 ; gain = 745.961
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 196 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+150 Infos, 257 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:06 ; elapsed = 00:01:11 . Memory (MB): peak = 1050.441 ; gain = 757.441
+INFO: [Common 17-1381] The checkpoint 'D:/Senior Design/Technical Work/Vivado/AES_128_Decryption_Overlay/AES_128_Decryption_Overlay.runs/design_1_aes_128_decryption_ip_0_0_synth_1/design_1_aes_128_decryption_ip_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:22 . Memory (MB): peak = 1050.441 ; gain = 0.000

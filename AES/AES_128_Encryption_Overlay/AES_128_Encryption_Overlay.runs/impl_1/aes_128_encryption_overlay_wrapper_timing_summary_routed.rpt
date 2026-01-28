@@ -1,0 +1,1233 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Jul  9 21:52:38 2025
+| Host         : DESKTOP-MN1CKLB running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file aes_128_encryption_overlay_wrapper_timing_summary_routed.rpt -rpx aes_128_encryption_overlay_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : aes_128_encryption_overlay_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  false
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      3.533        0.000                      0                 9118        0.027        0.000                      0                 9118        4.020        0.000                       0                  5305  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock       Waveform(ns)       Period(ns)      Frequency(MHz)
+-----       ------------       ----------      --------------
+clk_fpga_0  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_fpga_0          3.533        0.000                      0                 9118        0.027        0.000                      0                 9118        4.020        0.000                       0                  5305  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_fpga_0
+  To Clock:  clk_fpga_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        3.533ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.027ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.020ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             3.533ns  (required time - arrival time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[18]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.997ns  (logic 0.580ns (9.672%)  route 5.417ns (90.328%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.111ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.654ns = ( 12.654 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.994ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.700     2.994    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y99         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y99         FDRE (Prop_fdre_C_Q)         0.456     3.450 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/Q
+                         net (fo=48, routed)          4.774     8.224    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/p_0_in[2]
+    SLICE_X38Y58         LUT6 (Prop_lut6_I2_O)        0.124     8.348 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12[23]_i_1/O
+                         net (fo=8, routed)           0.642     8.991    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12[23]_i_1_n_0
+    SLICE_X37Y62         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[18]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.475    12.654    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X37Y62         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[18]/C
+                         clock pessimism              0.229    12.883    
+                         clock uncertainty           -0.154    12.729    
+    SLICE_X37Y62         FDRE (Setup_fdre_C_CE)      -0.205    12.524    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[18]
+  -------------------------------------------------------------------
+                         required time                         12.524    
+                         arrival time                          -8.991    
+  -------------------------------------------------------------------
+                         slack                                  3.533    
+
+Slack (MET) :             3.533ns  (required time - arrival time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[19]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.997ns  (logic 0.580ns (9.672%)  route 5.417ns (90.328%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.111ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.654ns = ( 12.654 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.994ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.700     2.994    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y99         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y99         FDRE (Prop_fdre_C_Q)         0.456     3.450 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/Q
+                         net (fo=48, routed)          4.774     8.224    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/p_0_in[2]
+    SLICE_X38Y58         LUT6 (Prop_lut6_I2_O)        0.124     8.348 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12[23]_i_1/O
+                         net (fo=8, routed)           0.642     8.991    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12[23]_i_1_n_0
+    SLICE_X37Y62         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[19]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.475    12.654    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X37Y62         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[19]/C
+                         clock pessimism              0.229    12.883    
+                         clock uncertainty           -0.154    12.729    
+    SLICE_X37Y62         FDRE (Setup_fdre_C_CE)      -0.205    12.524    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[19]
+  -------------------------------------------------------------------
+                         required time                         12.524    
+                         arrival time                          -8.991    
+  -------------------------------------------------------------------
+                         slack                                  3.533    
+
+Slack (MET) :             3.598ns  (required time - arrival time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13_reg[17]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.934ns  (logic 0.580ns (9.775%)  route 5.354ns (90.225%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.109ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.656ns = ( 12.656 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.994ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.700     2.994    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y99         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y99         FDRE (Prop_fdre_C_Q)         0.456     3.450 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[2]/Q
+                         net (fo=48, routed)          4.708     8.158    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/p_0_in[0]
+    SLICE_X38Y58         LUT6 (Prop_lut6_I2_O)        0.124     8.282 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13[23]_i_1/O
+                         net (fo=8, routed)           0.646     8.928    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13[23]_i_1_n_0
+    SLICE_X40Y60         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13_reg[17]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.477    12.656    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X40Y60         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13_reg[17]/C
+                         clock pessimism              0.229    12.885    
+                         clock uncertainty           -0.154    12.731    
+    SLICE_X40Y60         FDRE (Setup_fdre_C_CE)      -0.205    12.526    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13_reg[17]
+  -------------------------------------------------------------------
+                         required time                         12.526    
+                         arrival time                          -8.928    
+  -------------------------------------------------------------------
+                         slack                                  3.598    
+
+Slack (MET) :             3.640ns  (required time - arrival time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13_reg[18]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.927ns  (logic 0.580ns (9.786%)  route 5.347ns (90.213%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.110ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.655ns = ( 12.655 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.994ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.700     2.994    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y99         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y99         FDRE (Prop_fdre_C_Q)         0.456     3.450 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[2]/Q
+                         net (fo=48, routed)          4.708     8.158    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/p_0_in[0]
+    SLICE_X38Y58         LUT6 (Prop_lut6_I2_O)        0.124     8.282 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13[23]_i_1/O
+                         net (fo=8, routed)           0.639     8.921    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13[23]_i_1_n_0
+    SLICE_X36Y61         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13_reg[18]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.476    12.655    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X36Y61         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13_reg[18]/C
+                         clock pessimism              0.229    12.884    
+                         clock uncertainty           -0.154    12.730    
+    SLICE_X36Y61         FDRE (Setup_fdre_C_CE)      -0.169    12.561    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13_reg[18]
+  -------------------------------------------------------------------
+                         required time                         12.561    
+                         arrival time                          -8.921    
+  -------------------------------------------------------------------
+                         slack                                  3.640    
+
+Slack (MET) :             3.640ns  (required time - arrival time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13_reg[19]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.927ns  (logic 0.580ns (9.786%)  route 5.347ns (90.213%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.110ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.655ns = ( 12.655 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.994ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.700     2.994    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y99         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y99         FDRE (Prop_fdre_C_Q)         0.456     3.450 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[2]/Q
+                         net (fo=48, routed)          4.708     8.158    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/p_0_in[0]
+    SLICE_X38Y58         LUT6 (Prop_lut6_I2_O)        0.124     8.282 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13[23]_i_1/O
+                         net (fo=8, routed)           0.639     8.921    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13[23]_i_1_n_0
+    SLICE_X36Y61         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13_reg[19]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.476    12.655    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X36Y61         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13_reg[19]/C
+                         clock pessimism              0.229    12.884    
+                         clock uncertainty           -0.154    12.730    
+    SLICE_X36Y61         FDRE (Setup_fdre_C_CE)      -0.169    12.561    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg13_reg[19]
+  -------------------------------------------------------------------
+                         required time                         12.561    
+                         arrival time                          -8.921    
+  -------------------------------------------------------------------
+                         slack                                  3.640    
+
+Slack (MET) :             3.674ns  (required time - arrival time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[16]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.859ns  (logic 0.580ns (9.899%)  route 5.279ns (90.100%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.108ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.657ns = ( 12.657 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.994ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.700     2.994    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y99         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y99         FDRE (Prop_fdre_C_Q)         0.456     3.450 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/Q
+                         net (fo=48, routed)          4.774     8.224    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/p_0_in[2]
+    SLICE_X38Y58         LUT6 (Prop_lut6_I2_O)        0.124     8.348 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12[23]_i_1/O
+                         net (fo=8, routed)           0.505     8.853    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12[23]_i_1_n_0
+    SLICE_X40Y57         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[16]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.478    12.657    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X40Y57         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[16]/C
+                         clock pessimism              0.229    12.886    
+                         clock uncertainty           -0.154    12.732    
+    SLICE_X40Y57         FDRE (Setup_fdre_C_CE)      -0.205    12.527    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[16]
+  -------------------------------------------------------------------
+                         required time                         12.527    
+                         arrival time                          -8.853    
+  -------------------------------------------------------------------
+                         slack                                  3.674    
+
+Slack (MET) :             3.676ns  (required time - arrival time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[17]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.855ns  (logic 0.580ns (9.905%)  route 5.275ns (90.095%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.109ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.656ns = ( 12.656 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.994ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.700     2.994    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y99         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y99         FDRE (Prop_fdre_C_Q)         0.456     3.450 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/Q
+                         net (fo=48, routed)          4.774     8.224    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/p_0_in[2]
+    SLICE_X38Y58         LUT6 (Prop_lut6_I2_O)        0.124     8.348 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12[23]_i_1/O
+                         net (fo=8, routed)           0.501     8.849    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12[23]_i_1_n_0
+    SLICE_X37Y60         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[17]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.477    12.656    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X37Y60         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[17]/C
+                         clock pessimism              0.229    12.885    
+                         clock uncertainty           -0.154    12.731    
+    SLICE_X37Y60         FDRE (Setup_fdre_C_CE)      -0.205    12.526    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[17]
+  -------------------------------------------------------------------
+                         required time                         12.526    
+                         arrival time                          -8.849    
+  -------------------------------------------------------------------
+                         slack                                  3.676    
+
+Slack (MET) :             3.676ns  (required time - arrival time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[20]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.855ns  (logic 0.580ns (9.905%)  route 5.275ns (90.095%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.109ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.656ns = ( 12.656 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.994ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.700     2.994    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y99         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y99         FDRE (Prop_fdre_C_Q)         0.456     3.450 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/Q
+                         net (fo=48, routed)          4.774     8.224    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/p_0_in[2]
+    SLICE_X38Y58         LUT6 (Prop_lut6_I2_O)        0.124     8.348 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12[23]_i_1/O
+                         net (fo=8, routed)           0.501     8.849    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12[23]_i_1_n_0
+    SLICE_X37Y60         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[20]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.477    12.656    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X37Y60         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[20]/C
+                         clock pessimism              0.229    12.885    
+                         clock uncertainty           -0.154    12.731    
+    SLICE_X37Y60         FDRE (Setup_fdre_C_CE)      -0.205    12.526    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[20]
+  -------------------------------------------------------------------
+                         required time                         12.526    
+                         arrival time                          -8.849    
+  -------------------------------------------------------------------
+                         slack                                  3.676    
+
+Slack (MET) :             3.676ns  (required time - arrival time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[23]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.855ns  (logic 0.580ns (9.905%)  route 5.275ns (90.095%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.109ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.656ns = ( 12.656 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.994ns
+    Clock Pessimism Removal (CPR):    0.229ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.700     2.994    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y99         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y99         FDRE (Prop_fdre_C_Q)         0.456     3.450 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/Q
+                         net (fo=48, routed)          4.774     8.224    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/p_0_in[2]
+    SLICE_X38Y58         LUT6 (Prop_lut6_I2_O)        0.124     8.348 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12[23]_i_1/O
+                         net (fo=8, routed)           0.501     8.849    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12[23]_i_1_n_0
+    SLICE_X37Y60         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[23]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.477    12.656    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X37Y60         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[23]/C
+                         clock pessimism              0.229    12.885    
+                         clock uncertainty           -0.154    12.731    
+    SLICE_X37Y60         FDRE (Setup_fdre_C_CE)      -0.205    12.526    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg12_reg[23]
+  -------------------------------------------------------------------
+                         required time                         12.526    
+                         arrival time                          -8.849    
+  -------------------------------------------------------------------
+                         slack                                  3.676    
+
+Slack (MET) :             3.740ns  (required time - arrival time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg6_reg[30]/CE
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        5.773ns  (logic 0.580ns (10.046%)  route 5.193ns (89.954%))
+  Logic Levels:           1  (LUT6=1)
+  Clock Path Skew:        -0.128ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.751ns = ( 12.752 - 10.000 ) 
+    Source Clock Delay      (SCD):    2.994ns
+    Clock Pessimism Removal (CPR):    0.115ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.700     2.994    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y99         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y99         FDRE (Prop_fdre_C_Q)         0.456     3.450 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/axi_awaddr_reg[4]/Q
+                         net (fo=48, routed)          4.476     7.926    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/p_0_in[2]
+    SLICE_X31Y52         LUT6 (Prop_lut6_I1_O)        0.124     8.050 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg6[31]_i_1/O
+                         net (fo=8, routed)           0.718     8.767    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg6[31]_i_1_n_0
+    SLICE_X31Y48         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg6_reg[30]/CE
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        1.572    12.752    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X31Y48         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg6_reg[30]/C
+                         clock pessimism              0.115    12.866    
+                         clock uncertainty           -0.154    12.712    
+    SLICE_X31Y48         FDRE (Setup_fdre_C_CE)      -0.205    12.507    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg6_reg[30]
+  -------------------------------------------------------------------
+                         required time                         12.507    
+                         arrival time                          -8.767    
+  -------------------------------------------------------------------
+                         slack                                  3.740    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.027ns  (arrival time - required time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r5/state_out_reg[98]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r6/t0/t2/s0/out_reg/ADDRBWRADDR[6]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.520ns  (logic 0.141ns (27.129%)  route 0.379ns (72.871%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.310ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.288ns
+    Source Clock Delay      (SCD):    0.949ns
+    Clock Pessimism Removal (CPR):    0.030ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.613     0.949    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r5/s00_axi_aclk
+    SLICE_X105Y41        FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r5/state_out_reg[98]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X105Y41        FDRE (Prop_fdre_C_Q)         0.141     1.090 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r5/state_out_reg[98]/Q
+                         net (fo=2, routed)           0.379     1.468    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r6/t0/t2/s0/state_in[2]
+    RAMB18_X5Y21         RAMB18E1                                     r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r6/t0/t2/s0/out_reg/ADDRBWRADDR[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.922     1.288    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r6/t0/t2/s0/s00_axi_aclk
+    RAMB18_X5Y21         RAMB18E1                                     r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r6/t0/t2/s0/out_reg/CLKBWRCLK
+                         clock pessimism             -0.030     1.258    
+    RAMB18_X5Y21         RAMB18E1 (Hold_ramb18e1_CLKBWRCLK_ADDRBWRADDR[6])
+                                                      0.183     1.441    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r6/t0/t2/s0/out_reg
+  -------------------------------------------------------------------
+                         required time                         -1.441    
+                         arrival time                           1.468    
+  -------------------------------------------------------------------
+                         slack                                  0.027    
+
+Slack (MET) :             0.027ns  (arrival time - required time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r5/state_out_reg[98]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r6/t0/t2/s4/out_reg/ADDRBWRADDR[6]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.520ns  (logic 0.141ns (27.129%)  route 0.379ns (72.871%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.310ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.288ns
+    Source Clock Delay      (SCD):    0.949ns
+    Clock Pessimism Removal (CPR):    0.030ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.613     0.949    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r5/s00_axi_aclk
+    SLICE_X105Y41        FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r5/state_out_reg[98]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X105Y41        FDRE (Prop_fdre_C_Q)         0.141     1.090 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r5/state_out_reg[98]/Q
+                         net (fo=2, routed)           0.379     1.468    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r6/t0/t2/s4/state_in[2]
+    RAMB18_X5Y20         RAMB18E1                                     r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r6/t0/t2/s4/out_reg/ADDRBWRADDR[6]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.922     1.288    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r6/t0/t2/s4/s00_axi_aclk
+    RAMB18_X5Y20         RAMB18E1                                     r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r6/t0/t2/s4/out_reg/CLKBWRCLK
+                         clock pessimism             -0.030     1.258    
+    RAMB18_X5Y20         RAMB18E1 (Hold_ramb18e1_CLKBWRCLK_ADDRBWRADDR[6])
+                                                      0.183     1.441    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r6/t0/t2/s4/out_reg
+  -------------------------------------------------------------------
+                         required time                         -1.441    
+                         arrival time                           1.468    
+  -------------------------------------------------------------------
+                         slack                                  0.027    
+
+Slack (MET) :             0.039ns  (arrival time - required time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a8/out_1_reg[51]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a9/k3a_reg[19]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.410ns  (logic 0.209ns (50.942%)  route 0.201ns (49.058%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.264ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.174ns
+    Source Clock Delay      (SCD):    0.875ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.539     0.875    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a8/s00_axi_aclk
+    SLICE_X50Y75         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a8/out_1_reg[51]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X50Y75         FDRE (Prop_fdre_C_Q)         0.164     1.039 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a8/out_1_reg[51]/Q
+                         net (fo=2, routed)           0.201     1.240    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a8/k8[51]
+    SLICE_X48Y75         LUT4 (Prop_lut4_I0_O)        0.045     1.285 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a8/k3a[19]_i_1__7/O
+                         net (fo=1, routed)           0.000     1.285    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a9/v3[19]
+    SLICE_X48Y75         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a9/k3a_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.808     1.174    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a9/s00_axi_aclk
+    SLICE_X48Y75         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a9/k3a_reg[19]/C
+                         clock pessimism             -0.035     1.139    
+    SLICE_X48Y75         FDRE (Hold_fdre_C_D)         0.107     1.246    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a9/k3a_reg[19]
+  -------------------------------------------------------------------
+                         required time                         -1.246    
+                         arrival time                           1.285    
+  -------------------------------------------------------------------
+                         slack                                  0.039    
+
+Slack (MET) :             0.040ns  (arrival time - required time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/state_out_reg[102]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s0/out_reg/ADDRBWRADDR[10]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.623ns  (logic 0.141ns (22.615%)  route 0.482ns (77.385%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.401ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.339ns
+    Source Clock Delay      (SCD):    0.904ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.568     0.904    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/s00_axi_aclk
+    SLICE_X55Y80         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/state_out_reg[102]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y80         FDRE (Prop_fdre_C_Q)         0.141     1.045 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/state_out_reg[102]/Q
+                         net (fo=2, routed)           0.482     1.527    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s0/state_in[6]
+    RAMB18_X3Y42         RAMB18E1                                     r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s0/out_reg/ADDRBWRADDR[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.973     1.339    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s0/s00_axi_aclk
+    RAMB18_X3Y42         RAMB18E1                                     r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s0/out_reg/CLKBWRCLK
+                         clock pessimism             -0.035     1.304    
+    RAMB18_X3Y42         RAMB18E1 (Hold_ramb18e1_CLKBWRCLK_ADDRBWRADDR[10])
+                                                      0.183     1.487    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s0/out_reg
+  -------------------------------------------------------------------
+                         required time                         -1.487    
+                         arrival time                           1.527    
+  -------------------------------------------------------------------
+                         slack                                  0.040    
+
+Slack (MET) :             0.040ns  (arrival time - required time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/state_out_reg[102]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s4/out_reg/ADDRBWRADDR[10]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.623ns  (logic 0.141ns (22.615%)  route 0.482ns (77.385%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.401ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.339ns
+    Source Clock Delay      (SCD):    0.904ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.568     0.904    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/s00_axi_aclk
+    SLICE_X55Y80         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/state_out_reg[102]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y80         FDRE (Prop_fdre_C_Q)         0.141     1.045 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/state_out_reg[102]/Q
+                         net (fo=2, routed)           0.482     1.527    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s4/state_in[6]
+    RAMB18_X3Y43         RAMB18E1                                     r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s4/out_reg/ADDRBWRADDR[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.973     1.339    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s4/s00_axi_aclk
+    RAMB18_X3Y43         RAMB18E1                                     r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s4/out_reg/CLKBWRCLK
+                         clock pessimism             -0.035     1.304    
+    RAMB18_X3Y43         RAMB18E1 (Hold_ramb18e1_CLKBWRCLK_ADDRBWRADDR[10])
+                                                      0.183     1.487    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s4/out_reg
+  -------------------------------------------------------------------
+                         required time                         -1.487    
+                         arrival time                           1.527    
+  -------------------------------------------------------------------
+                         slack                                  0.040    
+
+Slack (MET) :             0.041ns  (arrival time - required time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/state_out_reg[107]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s0/out_reg/ADDRARDADDR[7]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.625ns  (logic 0.141ns (22.559%)  route 0.484ns (77.441%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.401ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.338ns
+    Source Clock Delay      (SCD):    0.903ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.567     0.903    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/s00_axi_aclk
+    SLICE_X55Y79         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/state_out_reg[107]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y79         FDRE (Prop_fdre_C_Q)         0.141     1.044 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/state_out_reg[107]/Q
+                         net (fo=2, routed)           0.484     1.528    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s0/state_in[11]
+    RAMB18_X3Y42         RAMB18E1                                     r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s0/out_reg/ADDRARDADDR[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.972     1.338    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s0/s00_axi_aclk
+    RAMB18_X3Y42         RAMB18E1                                     r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s0/out_reg/CLKARDCLK
+                         clock pessimism             -0.035     1.303    
+    RAMB18_X3Y42         RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[7])
+                                                      0.183     1.486    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s0/out_reg
+  -------------------------------------------------------------------
+                         required time                         -1.486    
+                         arrival time                           1.528    
+  -------------------------------------------------------------------
+                         slack                                  0.041    
+
+Slack (MET) :             0.041ns  (arrival time - required time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/state_out_reg[107]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s4/out_reg/ADDRARDADDR[7]
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.625ns  (logic 0.141ns (22.559%)  route 0.484ns (77.441%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.401ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.338ns
+    Source Clock Delay      (SCD):    0.903ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.567     0.903    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/s00_axi_aclk
+    SLICE_X55Y79         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/state_out_reg[107]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X55Y79         FDRE (Prop_fdre_C_Q)         0.141     1.044 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r8/state_out_reg[107]/Q
+                         net (fo=2, routed)           0.484     1.528    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s4/state_in[11]
+    RAMB18_X3Y43         RAMB18E1                                     r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s4/out_reg/ADDRARDADDR[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.972     1.338    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s4/s00_axi_aclk
+    RAMB18_X3Y43         RAMB18E1                                     r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s4/out_reg/CLKARDCLK
+                         clock pessimism             -0.035     1.303    
+    RAMB18_X3Y43         RAMB18E1 (Hold_ramb18e1_CLKARDCLK_ADDRARDADDR[7])
+                                                      0.183     1.486    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r9/t0/t2/s4/out_reg
+  -------------------------------------------------------------------
+                         required time                         -1.486    
+                         arrival time                           1.528    
+  -------------------------------------------------------------------
+                         slack                                  0.041    
+
+Slack (MET) :             0.042ns  (arrival time - required time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a5/out_1_reg[57]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a6/k3a_reg[25]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.413ns  (logic 0.190ns (45.949%)  route 0.223ns (54.051%))
+  Logic Levels:           1  (LUT4=1)
+  Clock Path Skew:        0.264ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.220ns
+    Source Clock Delay      (SCD):    0.926ns
+    Clock Pessimism Removal (CPR):    0.030ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.590     0.926    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a5/s00_axi_aclk
+    SLICE_X89Y45         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a5/out_1_reg[57]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X89Y45         FDRE (Prop_fdre_C_Q)         0.141     1.067 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a5/out_1_reg[57]/Q
+                         net (fo=2, routed)           0.223     1.290    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a5/k5[57]
+    SLICE_X89Y50         LUT4 (Prop_lut4_I0_O)        0.049     1.339 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a5/k3a[25]_i_1__4/O
+                         net (fo=1, routed)           0.000     1.339    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a6/v3[25]
+    SLICE_X89Y50         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a6/k3a_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.854     1.220    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a6/s00_axi_aclk
+    SLICE_X89Y50         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a6/k3a_reg[25]/C
+                         clock pessimism             -0.030     1.190    
+    SLICE_X89Y50         FDRE (Hold_fdre_C_D)         0.107     1.297    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a6/k3a_reg[25]
+  -------------------------------------------------------------------
+                         required time                         -1.297    
+                         arrival time                           1.339    
+  -------------------------------------------------------------------
+                         slack                                  0.042    
+
+Slack (MET) :             0.051ns  (arrival time - required time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg4_reg[9]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/k0_reg[105]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.403ns  (logic 0.141ns (34.997%)  route 0.262ns (65.003%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.281ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.224ns
+    Source Clock Delay      (SCD):    0.913ns
+    Clock Pessimism Removal (CPR):    0.030ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.577     0.913    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/s00_axi_aclk
+    SLICE_X28Y52         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg4_reg[9]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X28Y52         FDRE (Prop_fdre_C_Q)         0.141     1.054 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/slv_reg4_reg[9]/Q
+                         net (fo=3, routed)           0.262     1.315    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/key[105]
+    SLICE_X28Y45         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/k0_reg[105]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.858     1.224    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/s00_axi_aclk
+    SLICE_X28Y45         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/k0_reg[105]/C
+                         clock pessimism             -0.030     1.194    
+    SLICE_X28Y45         FDRE (Hold_fdre_C_D)         0.071     1.265    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/k0_reg[105]
+  -------------------------------------------------------------------
+                         required time                         -1.265    
+                         arrival time                           1.315    
+  -------------------------------------------------------------------
+                         slack                                  0.051    
+
+Slack (MET) :             0.052ns  (arrival time - required time)
+  Source:                 aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a5/out_1_reg[79]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a6/k1a_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.436ns  (logic 0.246ns (56.365%)  route 0.190ns (43.635%))
+  Logic Levels:           1  (LUT2=1)
+  Clock Path Skew:        0.264ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.243ns
+    Source Clock Delay      (SCD):    0.949ns
+    Clock Pessimism Removal (CPR):    0.030ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.613     0.949    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a5/s00_axi_aclk
+    SLICE_X90Y48         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a5/out_1_reg[79]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X90Y48         FDRE (Prop_fdre_C_Q)         0.148     1.097 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a5/out_1_reg[79]/Q
+                         net (fo=3, routed)           0.190     1.287    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a5/k5[79]
+    SLICE_X90Y52         LUT2 (Prop_lut2_I1_O)        0.098     1.385 r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a5/k1a[15]_i_1__4/O
+                         net (fo=1, routed)           0.000     1.385    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a6/v1[15]
+    SLICE_X90Y52         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a6/k1a_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    aes_128_encryption_overlay_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  aes_128_encryption_overlay_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=5305, routed)        0.877     1.243    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a6/s00_axi_aclk
+    SLICE_X90Y52         FDRE                                         r  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a6/k1a_reg[15]/C
+                         clock pessimism             -0.030     1.213    
+    SLICE_X90Y52         FDRE (Hold_fdre_C_D)         0.120     1.333    aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/a6/k1a_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -1.333    
+                         arrival time                           1.385    
+  -------------------------------------------------------------------
+                         slack                                  0.052    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_fpga_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { aes_128_encryption_overlay_i/processing_system7_0/inst/PS7_i/FCLKCLK[0] }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location      Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X2Y14  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t2/t0/s4/out_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X2Y14  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r1/t2/t0/s4/out_reg/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X2Y5   aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t1/t2/s4/out_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X2Y5   aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r2/t1/t2/s4/out_reg/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X3Y15  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t1/t0/s4/out_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X3Y15  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r3/t1/t0/s4/out_reg/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X4Y10  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r4/t0/t2/s4/out_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X4Y10  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r4/t0/t2/s4/out_reg/CLKBWRCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB18_X5Y13  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r5/t0/t0/s4/out_reg/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB18_X5Y13  aes_128_encryption_overlay_i/aes_128_encryption_ip_0/inst/aes_128_encryption_ip_v1_0_S00_AXI_inst/aes_i/r5/t0/t0/s4/out_reg/CLKBWRCLK
+Low Pulse Width   Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X26Y79  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][12]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X26Y79  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][14]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X30Y78  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][16]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X30Y78  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][17]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X30Y78  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][22]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X30Y78  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][23]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X26Y70  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][2]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X26Y70  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][3]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X26Y70  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][4]_srl32/CLK
+Low Pulse Width   Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X26Y70  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][6]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X26Y74  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][0]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X26Y81  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][10]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X26Y74  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][11]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X26Y81  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][13]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X26Y81  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][15]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X30Y78  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][16]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X30Y78  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][17]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X26Y74  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][1]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X30Y78  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][22]_srl32/CLK
+High Pulse Width  Slow    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X30Y78  aes_128_encryption_overlay_i/ps7_0_axi_periph/s00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][23]_srl32/CLK
+
+
+

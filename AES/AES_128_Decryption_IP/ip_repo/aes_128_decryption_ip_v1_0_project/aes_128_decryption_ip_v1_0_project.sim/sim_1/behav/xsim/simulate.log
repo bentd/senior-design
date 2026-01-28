@@ -1,0 +1,4 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+Good.
+$finish called at time : 872 ns : File "D:/Senior Design/Technical Work/Vivado/AES_128_Decryption_IP/ip_repo/aes_128_decryption_ip_v1_0_project/aes_128_decryption_ip_v1_0_project.srcs/sim_1/imports/GitHub/test_aes_128.v" Line 82

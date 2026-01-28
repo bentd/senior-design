@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="synth_1" LaunchDir="D:/Senior Design/Technical Work/Vivado/AES_128_Encryption_IP/ip_repo/aes_128_encryption_ip_v1_0_project/aes_128_encryption_ip_v1_0_project.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+</Runs>
+

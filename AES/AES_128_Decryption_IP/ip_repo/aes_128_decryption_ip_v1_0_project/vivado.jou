@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Jul 23 15:09:58 2025
+# Process ID: 13240
+# Current directory: D:/Senior Design/Technical Work/Vivado/AES_128_Decryption_IP/ip_repo/aes_128_decryption_ip_v1_0_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15740 D:\Senior Design\Technical Work\Vivado\AES_128_Decryption_IP\ip_repo\aes_128_decryption_ip_v1_0_project\aes_128_decryption_ip_v1_0_project.xpr
+# Log file: D:/Senior Design/Technical Work/Vivado/AES_128_Decryption_IP/ip_repo/aes_128_decryption_ip_v1_0_project/vivado.log
+# Journal file: D:/Senior Design/Technical Work/Vivado/AES_128_Decryption_IP/ip_repo/aes_128_decryption_ip_v1_0_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Senior Design/Technical Work/Vivado/AES_128_Decryption_IP/ip_repo/aes_128_decryption_ip_v1_0_project/aes_128_decryption_ip_v1_0_project.xpr}
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse {{D:/Senior Design/Technical Work/GitHub/test_aes_128.v}}
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top test_aes_128 [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+source test_aes_128.tcl
+open_project {D:/Senior Design/Technical Work/Vivado/AES_128_Encryption_IP/ip_repo/aes_128_encryption_ip_v1_0_project/aes_128_encryption_ip_v1_0_project.xpr}
+update_compile_order -fileset sources_1
+current_project aes_128_decryption_ip_v1_0_project
+close_sim
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+source test_aes_128.tcl
+close_sim
+launch_simulation
+source test_aes_128.tcl
